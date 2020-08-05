@@ -1,0 +1,76 @@
+1
+00:00:00,000 --> 00:00:05,850
+Depending on the situation we can sample ending states from three groups,
+
+2
+00:00:05,850 --> 00:00:09,730
+cruising, following, and stopping.
+
+3
+00:00:09,730 --> 00:00:15,035
+Cruising means our car would end at a constant velocity after the planning step.
+
+4
+00:00:15,035 --> 00:00:18,090
+Remember, we're sampling points on a graph where
+
+5
+00:00:18,090 --> 00:00:23,725
+the horizontal axis represents time and the vertical axis represents velocity.
+
+6
+00:00:23,725 --> 00:00:25,720
+For a point on this graph,
+
+7
+00:00:25,720 --> 00:00:29,215
+that means a car will enter a cruising state at a speed of
+
+8
+00:00:29,215 --> 00:00:32,865
+s. at time t. For this pattern,
+
+9
+00:00:32,865 --> 00:00:36,480
+the acceleration for all ending states is zero.
+
+10
+00:00:36,480 --> 00:00:39,680
+The next pattern to consider is following.
+
+11
+00:00:39,680 --> 00:00:44,020
+In this situation, we sample both position and time,
+
+12
+00:00:44,020 --> 00:00:50,160
+which means we would try to appear behind a certain car at time t. To follow that car,
+
+13
+00:00:50,160 --> 00:00:52,495
+we need to allow a safe distance,
+
+14
+00:00:52,495 --> 00:00:56,895
+so velocity and acceleration depend on the lead vehicle.
+
+15
+00:00:56,895 --> 00:00:59,310
+That means that in this pattern,
+
+16
+00:00:59,310 --> 00:01:02,985
+both velocity and acceleration are fixed.
+
+17
+00:01:02,985 --> 00:01:05,630
+The final state is stopping.
+
+18
+00:01:05,630 --> 00:01:11,005
+For this pattern, we just need to sample where and when the vehicle would stop.
+
+19
+00:01:11,005 --> 00:01:16,290
+In this scenario, we fix both velocity and acceleration to zero.
+

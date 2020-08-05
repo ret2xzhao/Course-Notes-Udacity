@@ -1,0 +1,60 @@
+1
+00:00:00,060 --> 00:00:06,024
+Path-velocity decoupled planning depends heavily on discretization.
+
+2
+00:00:06,025 --> 00:00:10,500
+Path selection involves dividing the road into cells and
+
+3
+00:00:10,500 --> 00:00:15,370
+speed profile construction involves dividing the ST graph into cells.
+
+4
+00:00:15,369 --> 00:00:18,905
+Discretization makes these problems easier to solve,
+
+5
+00:00:18,905 --> 00:00:21,470
+but the solutions aren't smooth.
+
+6
+00:00:21,469 --> 00:00:26,299
+In order to convert our discrete solutions into a smooth trajectory,
+
+7
+00:00:26,300 --> 00:00:29,644
+we can use a technique called quadratic programming.
+
+8
+00:00:29,644 --> 00:00:36,304
+Quadratic programming fits a smooth non-linear curve to these piecewise linear segments.
+
+9
+00:00:36,304 --> 00:00:39,990
+The mathematics behind quadratic programming are complex,
+
+10
+00:00:39,990 --> 00:00:41,250
+but for our purposes,
+
+11
+00:00:41,250 --> 00:00:43,399
+the details aren't really necessary.
+
+12
+00:00:43,399 --> 00:00:47,129
+We can simply use one of several different optimization packages,
+
+13
+00:00:47,130 --> 00:00:52,320
+including an implementation by Apollo to generate smooth results.
+
+14
+00:00:52,320 --> 00:00:55,918
+Once both our path and speed profile are ready,
+
+15
+00:00:55,918 --> 00:01:00,119
+we can use them to construct a three-dimensional trajectory.
+

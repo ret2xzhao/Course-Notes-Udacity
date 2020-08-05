@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:06,245
+Path velocity decoupled planning divide trajectory planning into two steps;
+
+2
+00:00:06,245 --> 00:00:09,285
+path planning and speed planning.
+
+3
+00:00:09,285 --> 00:00:12,180
+First in the path planning step,
+
+4
+00:00:12,180 --> 00:00:16,910
+we generate candidate curves which are the paths a vehicle could travel.
+
+5
+00:00:16,910 --> 00:00:21,810
+We evaluate each path using a cost function that incorporates smoothness,
+
+6
+00:00:21,810 --> 00:00:27,885
+safety, deviation from the center of the lane and any other factors we want to consider.
+
+7
+00:00:27,885 --> 00:00:32,555
+We rank the paths by cost and select the lowest cost path.
+
+8
+00:00:32,555 --> 00:00:37,415
+The next step is to determine what speed to travel along this path.
+
+9
+00:00:37,415 --> 00:00:40,570
+We may want to change speeds over the course of the path,
+
+10
+00:00:40,570 --> 00:00:43,380
+so what we really need to select is a sequence of
+
+11
+00:00:43,380 --> 00:00:47,370
+speeds associated with way points rather than a single speed.
+
+12
+00:00:47,370 --> 00:00:50,960
+We can call this sequence a speed profile.
+
+13
+00:00:50,960 --> 00:00:55,485
+We can use optimization to select a good speed profile for the path,
+
+14
+00:00:55,485 --> 00:00:57,980
+subject to various constraints.
+
+15
+00:00:57,980 --> 00:01:01,340
+The path and the speed profile combined
+
+16
+00:01:01,340 --> 00:01:05,160
+constitute a trajectory for the vehicle to travel.
+

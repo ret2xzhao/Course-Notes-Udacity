@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:06,365
+Planning is one of the hardest and most challenging parts of building a self-driving car.
+
+2
+00:00:06,365 --> 00:00:08,130
+The planning project from
+
+3
+00:00:08,130 --> 00:00:11,940
+the self-driving car engineer nanodegree program provides students with
+
+4
+00:00:11,940 --> 00:00:14,520
+a highway simulator and challenges them to
+
+5
+00:00:14,520 --> 00:00:17,775
+build a planner to navigate a vehicle through traffic.
+
+6
+00:00:17,775 --> 00:00:21,780
+This is a fun and realistic and really hard project
+
+7
+00:00:21,780 --> 00:00:26,030
+because you have to predict where other vehicles on the road will be in the future,
+
+8
+00:00:26,030 --> 00:00:28,155
+how you should react to them and
+
+9
+00:00:28,155 --> 00:00:31,760
+ultimately build a trajectory for the vehicle to execute.
+
+10
+00:00:31,760 --> 00:00:34,855
+The planning module in the nanodegree program covers
+
+11
+00:00:34,855 --> 00:00:38,095
+a new algorithm based on finite state machines.
+
+12
+00:00:38,095 --> 00:00:40,780
+In this approach, the planner first selects
+
+13
+00:00:40,780 --> 00:00:44,915
+a behavior like shifting lanes or speeding up or slowing down.
+
+14
+00:00:44,915 --> 00:00:49,305
+Then the planner builds a trajectory to execute that behavior.
+
+15
+00:00:49,305 --> 00:00:52,625
+If you'd like to dive into the world of motion planning,
+
+16
+00:00:52,625 --> 00:00:56,120
+join the nanodegree program to learn more.
+

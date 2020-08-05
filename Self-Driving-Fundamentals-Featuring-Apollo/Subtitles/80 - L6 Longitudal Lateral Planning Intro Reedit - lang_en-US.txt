@@ -1,0 +1,100 @@
+1
+00:00:00,000 --> 00:00:04,639
+Let's consider a trajectory generation approach called the lattice planning.
+
+2
+00:00:04,639 --> 00:00:07,669
+Using Frenet coordinates, we can project
+
+3
+00:00:07,669 --> 00:00:11,734
+our environment onto a longitudinal axis and a lateral axis.
+
+4
+00:00:11,734 --> 00:00:16,710
+Our goal is to generate a trajectory in three dimensions: a longitudinal dimension,
+
+5
+00:00:16,710 --> 00:00:19,815
+a lateral dimension, and a time dimension.
+
+6
+00:00:19,815 --> 00:00:23,170
+We can decompose the three-dimensional problem into
+
+7
+00:00:23,170 --> 00:00:25,780
+two separate two-dimensional problems by
+
+8
+00:00:25,780 --> 00:00:30,054
+separating the longitudinal and the lateral components of the trajectory.
+
+9
+00:00:30,053 --> 00:00:35,280
+One two-dimensional trajectory would be the longitudinal trajectory with timestamps.
+
+10
+00:00:35,280 --> 00:00:38,109
+We call this the ST trajectory.
+
+11
+00:00:38,109 --> 00:00:40,570
+The other two-dimensional trajectory would be
+
+12
+00:00:40,570 --> 00:00:44,454
+the lateral offset relative to the longitudinal trajectory.
+
+13
+00:00:44,454 --> 00:00:47,375
+We call this the SL trajectory.
+
+14
+00:00:47,375 --> 00:00:51,609
+Lattice planning is the two-step process of first developing
+
+15
+00:00:51,609 --> 00:00:56,875
+the ST and SL trajectories independently and then combining them.
+
+16
+00:00:56,875 --> 00:01:02,000
+To generate the two-dimensional longitudinal and lateral trajectories,
+
+17
+00:01:02,000 --> 00:01:05,400
+we start by projecting the initial vehicle state onto
+
+18
+00:01:05,400 --> 00:01:09,785
+the ST coordinate frame and the SL coordinate frame.
+
+19
+00:01:09,784 --> 00:01:13,049
+We select the ending state of the vehicle by sampling
+
+20
+00:01:13,049 --> 00:01:17,019
+multiple candidate ending states from pre-selected patterns.
+
+21
+00:01:17,019 --> 00:01:19,375
+For each candidate ending state,
+
+22
+00:01:19,375 --> 00:01:21,780
+we build a set of trajectories to transition
+
+23
+00:01:21,780 --> 00:01:25,310
+our vehicle from its initial state to the ending state.
+
+24
+00:01:25,310 --> 00:01:27,689
+We evaluate these trajectories using
+
+25
+00:01:27,689 --> 00:01:32,689
+a cost function and select the lowest cost function trajectory.
+

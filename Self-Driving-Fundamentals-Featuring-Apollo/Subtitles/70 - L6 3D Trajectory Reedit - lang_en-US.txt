@@ -1,0 +1,60 @@
+1
+00:00:01,040 --> 00:00:03,480
+The goal of trajectory generation is to
+
+2
+00:00:03,560 --> 00:00:07,260
+generate a trajectory defined by a series of waypoints.
+
+3
+00:00:08,360 --> 00:00:11,800
+We assign a timestamp and a velocity to each waypoint.
+
+4
+00:00:12,020 --> 00:00:14,120
+And we can fit a curve to these waypoints
+
+5
+00:00:14,120 --> 00:00:17,360
+to create a geometric representation of the trajectory.
+
+6
+00:00:18,320 --> 00:00:22,020
+Since moving obstacles may block parts of the road temporarily,
+
+7
+00:00:22,340 --> 00:00:25,020
+each waypoint in the trajectory has a timestamp.
+
+8
+00:00:25,900 --> 00:00:29,740
+We can combine the timestamp with the outputs of the prediction module
+
+9
+00:00:29,900 --> 00:00:33,340
+to verify that each waypoint on the trajectory will be vacant
+
+10
+00:00:33,360 --> 00:00:35,380
+at the time we plan to move through it.
+
+11
+00:00:36,540 --> 00:00:39,880
+These timestamps create a three-dimensional trajectory,
+
+12
+00:00:40,180 --> 00:00:43,160
+with each waypoint defined by two dimensions in space,
+
+13
+00:00:43,440 --> 00:00:45,220
+plus a third dimension in time.
+
+14
+00:00:46,140 --> 00:00:49,040
+We also designate a velocity for each waypoint.
+
+15
+00:00:49,940 --> 00:00:54,140
+The velocities ensures that the vehicle reaches each waypoint on schedule.
+

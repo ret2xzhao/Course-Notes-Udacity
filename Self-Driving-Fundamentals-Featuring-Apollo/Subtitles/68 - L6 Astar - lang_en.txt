@@ -1,0 +1,68 @@
+1
+00:00:00,080 --> 00:00:03,950
+Now let's consider a map in the real-world.
+
+2
+00:00:03,950 --> 00:00:06,855
+Suppose we'd pull up to an intersection.
+
+3
+00:00:06,855 --> 00:00:09,630
+We can go straight to take the highway,
+
+4
+00:00:09,630 --> 00:00:12,035
+go right or go left.
+
+5
+00:00:12,035 --> 00:00:17,254
+First, we'll change this map into a graph with three candidate nodes.
+
+6
+00:00:17,254 --> 00:00:20,144
+Next, we evaluate our options.
+
+7
+00:00:20,144 --> 00:00:24,524
+In practice, it takes a lot of effort to turn through an intersection.
+
+8
+00:00:24,524 --> 00:00:28,094
+So, we assign this node a higher g value.
+
+9
+00:00:28,094 --> 00:00:32,960
+The g value is the cost to go from the start to the candidate node.
+
+10
+00:00:32,960 --> 00:00:35,265
+Looking at the highway option,
+
+11
+00:00:35,265 --> 00:00:37,954
+we realize we'll have to travel a long way to
+
+12
+00:00:37,954 --> 00:00:40,969
+exit the highway and then return back to reach our goal.
+
+13
+00:00:40,969 --> 00:00:44,585
+So, we assign this option a higher h value.
+
+14
+00:00:44,585 --> 00:00:50,549
+The h value is the estimated cost to get from the candidate node to the goal.
+
+15
+00:00:50,549 --> 00:00:56,789
+Next, we sum the g and h values to calculate f values for each node.
+
+16
+00:00:56,789 --> 00:01:01,615
+We see that the lowest f value is actually the candidate node to the right.
+
+17
+00:01:01,615 --> 00:01:04,500
+So, that becomes our next move.
+

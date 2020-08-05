@@ -1,0 +1,68 @@
+1
+00:00:00,000 --> 00:00:05,955
+Traditionally, we describe the position of an object using Cartesian coordinates,
+
+2
+00:00:05,955 --> 00:00:09,763
+but Cartesian coordinates aren't optimal for a vehicle.
+
+3
+00:00:09,763 --> 00:00:12,449
+Given the X, Y position of the car,
+
+4
+00:00:12,449 --> 00:00:14,594
+if we don't know where the road is,
+
+5
+00:00:14,595 --> 00:00:17,250
+it's hard to know how far the car has traveled,
+
+6
+00:00:17,250 --> 00:00:20,324
+or whether it's deviated from the center of the lane.
+
+7
+00:00:20,324 --> 00:00:25,774
+In alternative to the Cartesian coordinate frame is the Frenet coordinate frame.
+
+8
+00:00:25,774 --> 00:00:30,579
+Frenet coordinates describe the position of a car with respect to the road.
+
+9
+00:00:30,579 --> 00:00:32,414
+In the Frenet frame,
+
+10
+00:00:32,414 --> 00:00:35,085
+S represents the distance along the road,
+
+11
+00:00:35,085 --> 00:00:37,870
+also known as the longitudinal coordinate.
+
+12
+00:00:37,869 --> 00:00:41,754
+D represents the displacement from the longitudinal line,
+
+13
+00:00:41,755 --> 00:00:44,160
+also known as the lateral coordinate.
+
+14
+00:00:44,159 --> 00:00:46,684
+At every point on the road,
+
+15
+00:00:46,685 --> 00:00:51,100
+the lateral axis and the longitudinal axis are perpendicular.
+
+16
+00:00:51,100 --> 00:00:55,475
+The longitudinal coordinate tells us how far down the road we've traveled,
+
+17
+00:00:55,475 --> 00:01:01,439
+and the lateral coordinate tells us how far the car deviates from the center line.
+

@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:04,724
+Once we have both the ST and SL trajectories,
+
+2
+00:00:04,724 --> 00:00:09,070
+we need to transform them back to the Cartesian coordinate frame.
+
+3
+00:00:09,070 --> 00:00:13,434
+Then we can combine them to construct a three-dimensional trajectory
+
+4
+00:00:13,433 --> 00:00:18,129
+composed of two-dimensional way points and one-dimensional time stamps.
+
+5
+00:00:18,129 --> 00:00:23,049
+The ST trajectory is the longitudinal displacement over time,
+
+6
+00:00:23,050 --> 00:00:24,820
+and the SL trajectory is
+
+7
+00:00:24,820 --> 00:00:28,839
+the lateral offset for each point on the longitudinal trajectory.
+
+8
+00:00:28,839 --> 00:00:33,229
+Since both trajectories have a longitudinal coordinate S,
+
+9
+00:00:33,229 --> 00:00:38,250
+we can combine the trajectories by matching them on their S values.
+

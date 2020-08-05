@@ -1,0 +1,36 @@
+1
+00:00:00,020 --> 00:00:05,304
+The high-level map route is only one part of the planning process.
+
+2
+00:00:05,304 --> 00:00:10,125
+We still have to build low-level trajectories to move along that route.
+
+3
+00:00:10,125 --> 00:00:13,355
+This means dealing with objects like other vehicles or
+
+4
+00:00:13,355 --> 00:00:17,125
+bicycles or pedestrians that aren't part of the map.
+
+5
+00:00:17,125 --> 00:00:19,170
+For example, we might need to interact with
+
+6
+00:00:19,170 --> 00:00:22,020
+a car that's trying to make a U-turn in front of us,
+
+7
+00:00:22,019 --> 00:00:25,439
+or we might want to pass a slow car on the highway.
+
+8
+00:00:25,440 --> 00:00:29,995
+These scenarios require lower level, higher precision planning.
+
+9
+00:00:29,995 --> 00:00:34,399
+We call this level of planning trajectory generation.
+

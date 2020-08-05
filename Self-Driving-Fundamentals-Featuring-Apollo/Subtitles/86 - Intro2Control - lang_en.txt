@@ -1,0 +1,132 @@
+1
+00:00:09,470 --> 00:00:15,960
+In this module, you'll learn how to execute a trajectory using control.
+
+2
+00:00:15,960 --> 00:00:21,965
+Control is a strategy of actuating the vehicle to move it towards the road.
+
+3
+00:00:21,965 --> 00:00:28,790
+For a car, the most basic control inputs are steering, acceleration and break.
+
+4
+00:00:28,790 --> 00:00:35,855
+[inaudible] so controller receives trajectories as a sequence of way points.
+
+5
+00:00:35,855 --> 00:00:38,720
+The tasks of the controller is to use
+
+6
+00:00:38,720 --> 00:00:43,840
+a control inputs to move the vehicle towards those way points.
+
+7
+00:00:43,840 --> 00:00:47,835
+First, controller needs to be accurate.
+
+8
+00:00:47,835 --> 00:00:53,215
+That means, it should avoid deviation from the target trajectory.
+
+9
+00:00:53,215 --> 00:00:56,945
+This is specially important for safety.
+
+10
+00:00:56,945 --> 00:00:59,675
+Even if the pavement is wide,
+
+11
+00:00:59,675 --> 00:01:01,805
+other road turns sharply,
+
+12
+00:01:01,805 --> 00:01:07,385
+the controller still needs to execute the trajectory accurately.
+
+13
+00:01:07,385 --> 00:01:12,710
+Next, the control strategy should be favorable to the car.
+
+14
+00:01:12,710 --> 00:01:16,295
+For example, if your car is heading north,
+
+15
+00:01:16,295 --> 00:01:19,890
+and you want it to [inaudible] east,
+
+16
+00:01:19,890 --> 00:01:22,885
+you might be able to do that in your game,
+
+17
+00:01:22,885 --> 00:01:26,840
+but it won't be possible in real life.
+
+18
+00:01:26,840 --> 00:01:31,060
+The final consideration is smoothness.
+
+19
+00:01:31,060 --> 00:01:33,970
+Comfortable driving, is important.
+
+20
+00:01:33,970 --> 00:01:36,855
+If a vehicle drives erratically,
+
+21
+00:01:36,855 --> 00:01:40,610
+passengers will never want to ride in that again.
+
+22
+00:01:40,610 --> 00:01:43,055
+To make control comfortable,
+
+23
+00:01:43,055 --> 00:01:46,160
+actuation has to be continuous.
+
+24
+00:01:46,160 --> 00:01:53,115
+Which means you should avoid sudden steering, acceleration or break.
+
+25
+00:01:53,115 --> 00:02:00,110
+To summarize, in control our goal is to use variable control inputs.
+
+26
+00:02:00,110 --> 00:02:03,895
+To minimize deviation from target trajectory,
+
+27
+00:02:03,895 --> 00:02:07,455
+and maximize passenger comfort.
+
+28
+00:02:07,455 --> 00:02:11,970
+We'll review three control strategies that we can use to achieve
+
+29
+00:02:11,970 --> 00:02:17,565
+these goals: Proportional Integral Derivative Control or PID,
+
+30
+00:02:17,565 --> 00:02:21,305
+the Linear Quadratic Regulator or LQR,
+
+31
+00:02:21,305 --> 00:02:24,770
+and Model Predictive Control or MPC.
+
+32
+00:02:24,770 --> 00:02:26,660
+By the end of this lesson,
+
+33
+00:02:26,660 --> 00:02:32,100
+we hope you can appreciate several different strategies for controlling a vehicle.
+

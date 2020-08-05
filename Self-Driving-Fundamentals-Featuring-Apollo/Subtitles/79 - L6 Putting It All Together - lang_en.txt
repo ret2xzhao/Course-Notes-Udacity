@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:05,280
+Let's review Path Velocity Decoupled Planning from end to end.
+
+2
+00:00:05,280 --> 00:00:07,860
+Imagine we're driving down a road,
+
+3
+00:00:07,860 --> 00:00:12,750
+and our perception system observes that we're closing the gap on a slow moving vehicle.
+
+4
+00:00:12,750 --> 00:00:17,545
+First, we generate multiple candidate paths around this vehicle.
+
+5
+00:00:17,545 --> 00:00:21,390
+We evaluate those candidate paths using a cost function,
+
+6
+00:00:21,390 --> 00:00:24,060
+and we select the lowest cost path.
+
+7
+00:00:24,059 --> 00:00:27,729
+Then, we use an ST Graph for speed planning.
+
+8
+00:00:27,730 --> 00:00:33,469
+We block off parts of the ST Graph based on the position of other vehicles over time.
+
+9
+00:00:33,469 --> 00:00:36,250
+And optimization engine helps us identify
+
+10
+00:00:36,250 --> 00:00:41,640
+the best speed profile for this graph subject to constraints in the cost function.
+
+11
+00:00:41,640 --> 00:00:47,795
+We can apply quadratic programming to smooth the path and the speed profile.
+
+12
+00:00:47,795 --> 00:00:53,814
+Finally, we can bind the path and speed profile together to construct a trajectory.
+
+13
+00:00:53,814 --> 00:00:57,719
+Here, the trajectory is red where the speed is higher,
+
+14
+00:00:57,719 --> 00:00:59,799
+and blue where the speed is lower.
+
+15
+00:00:59,799 --> 00:01:05,659
+We use this trajectory to overtake the other vehicle safely and continue on our journey.
+
