@@ -1,0 +1,52 @@
+1
+00:00:00,270 --> 00:00:03,890
+The outputs of the controller are values for
+
+2
+00:00:03,890 --> 00:00:08,279
+the control inputs: steering, acceleration, and brake.
+
+3
+00:00:08,279 --> 00:00:11,359
+As we deviate from the target trajectory,
+
+4
+00:00:11,359 --> 00:00:14,469
+we want to take action to correct this deviation.
+
+5
+00:00:14,470 --> 00:00:16,025
+For a normal car,
+
+6
+00:00:16,024 --> 00:00:19,459
+we can do this by controlling our heading using the steering wheel,
+
+7
+00:00:19,460 --> 00:00:22,289
+accelerating using the accelerator,
+
+8
+00:00:22,289 --> 00:00:25,079
+and decelerating using the brake.
+
+9
+00:00:25,079 --> 00:00:28,474
+That's exactly what an autonomous vehicle does too.
+
+10
+00:00:28,475 --> 00:00:31,700
+Once these three values are passed to the vehicle,
+
+11
+00:00:31,699 --> 00:00:34,435
+the car actually starts to drive itself.
+
+12
+00:00:34,435 --> 00:00:38,109
+Coming up, we'll see how different control algorithms
+
+13
+00:00:38,109 --> 00:00:43,469
+calculate these three outputs: steering, acceleration, and brake.
+

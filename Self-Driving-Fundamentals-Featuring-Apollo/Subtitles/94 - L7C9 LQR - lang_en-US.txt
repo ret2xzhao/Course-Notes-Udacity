@@ -1,0 +1,296 @@
+1
+00:00:00,440 --> 00:00:03,720
+The linear quadratic regulator, or LQR,
+
+2
+00:00:04,080 --> 00:00:05,800
+is a model-based controller
+
+3
+00:00:05,820 --> 00:00:08,900
+that uses the state of the vehicle to minimize error.
+
+4
+00:00:09,740 --> 00:00:12,640
+Apollo uses LQR for lateral control.
+
+5
+00:00:13,420 --> 00:00:15,800
+Lateral control includes four components:
+
+6
+00:00:16,500 --> 00:00:17,720
+the lateral error,
+
+7
+00:00:18,220 --> 00:00:20,640
+the rate of change of the lateral error,
+
+8
+00:00:21,100 --> 00:00:22,240
+the heading error,
+
+9
+00:00:22,620 --> 00:00:24,580
+and the rate of change of the heading.
+
+10
+00:00:25,740 --> 00:00:28,420
+The rate of change is the same as the derivative,
+
+11
+00:00:28,560 --> 00:00:31,460
+and we denote this with a dot above the variable name.
+
+12
+00:00:32,460 --> 00:00:35,600
+We call the collection of these four components, x.
+
+13
+00:00:36,180 --> 00:00:39,640
+This collection, x, captures the state of the vehicle.
+
+14
+00:00:40,600 --> 00:00:41,920
+In addition to the state,
+
+15
+00:00:42,160 --> 00:00:44,620
+the vehicle has three control inputs:
+
+16
+00:00:44,960 --> 00:00:47,740
+steering, acceleration, and brake.
+
+17
+00:00:48,580 --> 00:00:51,680
+We will call this collection of control inputs “u”.
+
+18
+00:00:52,780 --> 00:00:55,080
+LQR handles linear control.
+
+19
+00:00:55,560 --> 00:00:58,580
+This type of model can represented by the equation
+
+20
+00:00:58,860 --> 00:01:01,560
+x-dot equals A x plus B u.
+
+21
+00:01:02,200 --> 00:01:04,460
+The x-dot vector is the derivative,
+
+22
+00:01:04,540 --> 00:01:06,840
+or rate of change, of the x vector.
+
+23
+00:01:07,280 --> 00:01:12,860
+So each component of x-dot is just the derivative of the corresponding component of x.
+
+24
+00:01:13,880 --> 00:01:17,420
+The equation x-dot equals A x plusB u
+
+25
+00:01:17,860 --> 00:01:19,880
+captures how the change in state,
+
+26
+00:01:20,040 --> 00:01:24,020
+x-dot, is affected by both the current state, x,
+
+27
+00:01:24,520 --> 00:01:26,540
+and the control inputs, u.
+
+28
+00:01:27,380 --> 00:01:29,020
+This equation is linear
+
+29
+00:01:29,280 --> 00:01:31,960
+because when we change x by delta x
+
+30
+00:01:32,320 --> 00:01:34,200
+and u by delta u,
+
+31
+00:01:34,580 --> 00:01:37,820
+the change in x_dot will also satisfy this equation.
+
+32
+00:01:39,180 --> 00:01:41,820
+So now we understand the “L” in LQR.
+
+33
+00:01:42,660 --> 00:01:43,880
+What about “Q”?
+
+34
+00:01:44,860 --> 00:01:47,800
+The goal here, as is typical in control,
+
+35
+00:01:48,080 --> 00:01:49,420
+is to minimize the error.
+
+36
+00:01:50,160 --> 00:01:53,880
+But we also want to apply as few control inputs as possible,
+
+37
+00:01:54,360 --> 00:01:55,560
+since these have costs,
+
+38
+00:01:55,960 --> 00:01:58,000
+for example, gas or electricity.
+
+39
+00:01:59,140 --> 00:02:01,320
+In order to minimize these factors,
+
+40
+00:02:01,620 --> 00:02:03,980
+we could keep a running summation of errors,
+
+41
+00:02:04,040 --> 00:02:06,060
+and a running summation of control inputs.
+
+42
+00:02:06,880 --> 00:02:09,220
+When the car turns too far to the right,
+
+43
+00:02:09,720 --> 00:02:11,480
+add to the error sum.
+
+44
+00:02:11,940 --> 00:02:14,840
+When the control input steers the car back to the left,
+
+45
+00:02:15,120 --> 00:02:17,460
+subtract a bit from the control input sum.
+
+46
+00:02:18,200 --> 00:02:20,380
+This approach causes problems, however,
+
+47
+00:02:20,700 --> 00:02:22,900
+because the positive errors to the right
+
+48
+00:02:23,100 --> 00:02:25,840
+simply cancel out the negative errors to the left.
+
+49
+00:02:26,480 --> 00:02:28,800
+The same would be true for control inputs.
+
+50
+00:02:29,300 --> 00:02:33,980
+Instead, we can multiply both x and u by themselves.
+
+51
+00:02:34,520 --> 00:02:38,580
+That way, negative values will also produce positive squares.
+
+52
+00:02:39,380 --> 00:02:41,700
+We will call these quadratic terms.
+
+53
+00:02:43,020 --> 00:02:46,100
+We assign weights to these terms and add them together.
+
+54
+00:02:47,020 --> 00:02:50,840
+The optimal u should minimize this summation overtime.
+
+55
+00:02:51,720 --> 00:02:54,720
+In mathematics, we called this value a cost function.
+
+56
+00:02:55,780 --> 00:02:59,900
+We often write the summation of weighted quadratic terms over time
+
+57
+00:02:59,940 --> 00:03:02,080
+in a compact matrix form.
+
+58
+00:03:02,640 --> 00:03:07,400
+Here, Q and R represent a collection of  weights for x and u.
+
+59
+00:03:08,820 --> 00:03:12,020
+X-t and u-t are transpose matrices,
+
+60
+00:03:12,420 --> 00:03:15,320
+which mean that they’re nearly identical to x and u,
+
+61
+00:03:15,580 --> 00:03:18,440
+just rearranged to allow for matrix multiplication.
+
+62
+00:03:19,460 --> 00:03:23,140
+Multiplying x by x-t and u by u-t
+
+63
+00:03:23,500 --> 00:03:26,880
+is essentially multiplying each of those matrices by itself.
+
+64
+00:03:28,300 --> 00:03:31,920
+The minimization of this cost function is a complex process,
+
+65
+00:03:32,140 --> 00:03:36,880
+but typically we can rely on a numerical solver to find the solution for us.
+
+66
+00:03:37,700 --> 00:03:40,380
+Apollo provides one such solver, for example.
+
+67
+00:03:41,060 --> 00:03:42,100
+In LQR,
+
+68
+00:03:42,720 --> 00:03:47,280
+the control method is described as u = -Kx
+
+69
+00:03:47,400 --> 00:03:50,020
+where K represents a complicated skeme
+
+70
+00:03:50,300 --> 00:03:52,940
+that indicate how to calculate u from x.
+
+71
+00:03:53,700 --> 00:03:57,420
+So to find an optimal u is to find an optimal K. 
+
+72
+00:03:58,320 --> 00:04:01,160
+Many tools have easy access to solve K
+
+73
+00:04:01,240 --> 00:04:05,520
+once you provide A, B which model the physics of the vehicle,
+
+74
+00:04:05,740 --> 00:04:09,220
+as well as Q, R, which are the weights for x and u.
+

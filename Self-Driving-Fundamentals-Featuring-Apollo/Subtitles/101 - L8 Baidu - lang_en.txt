@@ -1,0 +1,108 @@
+1
+00:00:09,380 --> 00:00:13,350
+Congratulations on completing the journey with Apollo.
+
+2
+00:00:13,350 --> 00:00:15,570
+You have learned about the core components of
+
+3
+00:00:15,570 --> 00:00:20,560
+self-driving cars and how they work together to power on autonomous vehicle.
+
+4
+00:00:20,560 --> 00:00:25,515
+You've also learned how Apollo enables developers to build self-driving cars.
+
+5
+00:00:25,515 --> 00:00:28,590
+This is remarkable, and we're so proud of you.
+
+6
+00:00:28,590 --> 00:00:31,700
+Of course, you still have a lot to learn.
+
+7
+00:00:31,700 --> 00:00:34,015
+If you want to be a self-driving car engineer,
+
+8
+00:00:34,015 --> 00:00:35,740
+this is just the beginning.
+
+9
+00:00:35,740 --> 00:00:37,440
+So, what's next?
+
+10
+00:00:37,440 --> 00:00:39,300
+If you want to learn the math and
+
+11
+00:00:39,300 --> 00:00:43,300
+core computer programming skills necessary to build a self-driving car,
+
+12
+00:00:43,300 --> 00:00:47,370
+join Udacity's intro to self-driving cars nanodegree program.
+
+13
+00:00:47,370 --> 00:00:49,960
+If your skills are ready to dive right in,
+
+14
+00:00:49,960 --> 00:00:54,255
+then enroll in Udacity self-driving car Engineer nanodegree program.
+
+15
+00:00:54,255 --> 00:00:57,320
+In this program, you'll build a portfolio of
+
+16
+00:00:57,320 --> 00:01:02,190
+self-driving car projects that will prepare you for a job in the autonomous field.
+
+17
+00:01:02,190 --> 00:01:07,255
+You'll get to run your own code on Udacity's real self-driving car.
+
+18
+00:01:07,255 --> 00:01:11,184
+Udacity also has nanodegree programs for artificial intelligence,
+
+19
+00:01:11,184 --> 00:01:14,810
+including machine learning, deep learning, and computer vision.
+
+20
+00:01:14,810 --> 00:01:17,820
+No matter how you choose to proceed,
+
+21
+00:01:17,820 --> 00:01:21,460
+we hope you're excited about what you have learned with us
+
+22
+00:01:21,460 --> 00:01:26,190
+here and you're ready to continue the journey of lifelong learning.
+
+23
+00:01:26,190 --> 00:01:29,060
+As one of your lifelong friends,
+
+24
+00:01:29,060 --> 00:01:31,900
+Apollo welcomes you to join our huge family
+
+25
+00:01:31,900 --> 00:01:35,290
+and contribute your own ideas to our open platform.
+
+26
+00:01:35,290 --> 00:01:38,245
+No matter whether you're a developer or a student,
+
+27
+00:01:38,245 --> 00:01:41,940
+we can all do something amazing to change the world.
+

@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:06,660
+You've finished control, which is how self-driving cars actually move themselves.
+
+2
+00:00:06,660 --> 00:00:09,810
+In control, we use a steering,
+
+3
+00:00:09,810 --> 00:00:15,320
+acceleration, and the brake to execute our target trajectory.
+
+4
+00:00:15,320 --> 00:00:19,605
+We started several different types of controllers,
+
+5
+00:00:19,605 --> 00:00:25,033
+PID control is a simple and powerful control algorithm.
+
+6
+00:00:25,033 --> 00:00:28,949
+Linear quadratic regulators and the model predicted
+
+7
+00:00:28,949 --> 00:00:34,335
+control are two other types of controllers that are more complex,
+
+8
+00:00:34,335 --> 00:00:38,060
+but are also more powerful and accurate.
+
+9
+00:00:38,060 --> 00:00:42,380
+Apollo implements all three of those controllers,
+
+10
+00:00:42,380 --> 00:00:46,690
+and you can choose the one that works best for you.
+

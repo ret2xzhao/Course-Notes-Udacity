@@ -1,0 +1,160 @@
+1
+00:00:00,000 --> 00:00:01,649
+You're almost done.
+
+2
+00:00:01,649 --> 00:00:04,330
+One last unit left, is control.
+
+3
+00:00:04,330 --> 00:00:06,099
+Now, what is control?
+
+4
+00:00:06,099 --> 00:00:09,089
+Control is the fine motion of
+
+5
+00:00:09,089 --> 00:00:13,205
+your steering wheel and your brake pedal and your gas pedal. Why does it matter?
+
+6
+00:00:13,205 --> 00:00:17,640
+Well, say you have a trajectory and you want to follow it and you see a vehicle,
+
+7
+00:00:17,640 --> 00:00:21,234
+and there is some debris on the road or wind blowing into the car,
+
+8
+00:00:21,234 --> 00:00:23,619
+and your car gets lifted a bit to the side.
+
+9
+00:00:23,620 --> 00:00:24,780
+Now you have to correct it.
+
+10
+00:00:24,780 --> 00:00:26,775
+That's control. Why is it hard?
+
+11
+00:00:26,774 --> 00:00:29,294
+Well, say you steer it back to trajectory,
+
+12
+00:00:29,295 --> 00:00:31,505
+almost likely you are going to overshoot.
+
+13
+00:00:31,504 --> 00:00:34,329
+This overshoot, now you have to steer back the other way.
+
+14
+00:00:34,329 --> 00:00:35,640
+And before you realize,
+
+15
+00:00:35,640 --> 00:00:37,780
+you have this kind of shivering,
+
+16
+00:00:37,780 --> 00:00:40,935
+wavering, drunken chicken kind of behavior.
+
+17
+00:00:40,935 --> 00:00:42,945
+You just never want to see on the street.
+
+18
+00:00:42,945 --> 00:00:45,689
+So control is the field that makes
+
+19
+00:00:45,689 --> 00:00:49,409
+your car move smoothly and execute smoothly on a given trajectory.
+
+20
+00:00:49,409 --> 00:00:52,769
+Now, to tell you the truth, control is complicated.
+
+21
+00:00:52,770 --> 00:00:56,460
+You can't get a PhD in control unless you get 10-year in control.
+
+22
+00:00:56,460 --> 00:00:58,865
+You can be a professor of control.
+
+23
+00:00:58,865 --> 00:01:02,160
+So you can't possibly package all into one little problem here.
+
+24
+00:01:02,159 --> 00:01:03,479
+So instead is we're going to give you
+
+25
+00:01:03,479 --> 00:01:06,780
+a conceptual understanding of the basic algorithms that people use.
+
+26
+00:01:06,780 --> 00:01:09,105
+We'll start with PID control,
+
+27
+00:01:09,105 --> 00:01:11,640
+which is a very rightly used control mechanism,
+
+28
+00:01:11,640 --> 00:01:13,760
+and I just want you to understand the basics.
+
+29
+00:01:13,760 --> 00:01:17,219
+We then graduate to linear quadratic regulator control which is
+
+30
+00:01:17,219 --> 00:01:19,650
+a broader family and again we won't
+
+31
+00:01:19,650 --> 00:01:22,715
+give you all the math but we want you to understand the basics.
+
+32
+00:01:22,715 --> 00:01:26,490
+And finally, I've used Model Predictive Control which is
+
+33
+00:01:26,489 --> 00:01:30,174
+yet another form of control and these terms might sound confusing.
+
+34
+00:01:30,174 --> 00:01:32,519
+In fact I had to rehearse them many times.
+
+35
+00:01:32,519 --> 00:01:37,185
+They turn out to be the basic families of control that you'll find in
+
+36
+00:01:37,185 --> 00:01:42,825
+any self-driving car including very nicely implemented in the Apollo framework of BAIDU.So,
+
+37
+00:01:42,825 --> 00:01:46,200
+get ready for the last one and I hope at the end of this,
+
+38
+00:01:46,200 --> 00:01:47,730
+you have so much fun with it,
+
+39
+00:01:47,730 --> 00:01:51,390
+that I can convince you to graduate to the nanodegree program,
+
+40
+00:01:51,390 --> 00:01:54,189
+Introduction to Self-driving Cars.
+

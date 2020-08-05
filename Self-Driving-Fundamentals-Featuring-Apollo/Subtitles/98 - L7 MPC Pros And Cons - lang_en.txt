@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:04,900
+Model predictive control takes the vehicle model into consideration.
+
+2
+00:00:04,900 --> 00:00:08,220
+So, it's more accurate than PID control.
+
+3
+00:00:08,220 --> 00:00:11,050
+It also works with different cost functions.
+
+4
+00:00:11,050 --> 00:00:15,105
+So we can optimize different costs in different situations.
+
+5
+00:00:15,105 --> 00:00:19,035
+On the other hand, Model Predictive Control is complex,
+
+6
+00:00:19,035 --> 00:00:22,910
+slower, and harder to implement than PID control.
+
+7
+00:00:22,910 --> 00:00:28,480
+In practice, the importance in scalability of control for self-driving cars,
+
+8
+00:00:28,480 --> 00:00:31,960
+means that MPC is often worth the implementation cost.
+
+9
+00:00:31,960 --> 00:00:37,929
+So, MPC turns out to be a really important controller for self-driving cars
+

@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:04,580
+Control is one of the best studied problems in automotive engineering.
+
+2
+00:00:04,580 --> 00:00:08,850
+In the Udacity self-driving car engineer nanodegree program,
+
+3
+00:00:08,850 --> 00:00:12,000
+students use a simulator to build a PID controller
+
+4
+00:00:12,000 --> 00:00:16,875
+in C++ and race their car around a track as fast as possible.
+
+5
+00:00:16,875 --> 00:00:19,770
+It is so cool to see your car fly around
+
+6
+00:00:19,770 --> 00:00:23,700
+the track adhering to the target trajectory all the way.
+
+7
+00:00:23,700 --> 00:00:27,190
+If you're excited about working on self-driving cars,
+
+8
+00:00:27,190 --> 00:00:30,120
+join the nanodegree program today.
+

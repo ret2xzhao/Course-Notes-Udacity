@@ -1,0 +1,60 @@
+1
+00:00:00,440 --> 00:00:04,500
+The optimization engine evaluates control inputs indirectly,
+
+2
+00:00:04,800 --> 00:00:07,700
+by using them to model a trajectory for the vehicle.
+
+3
+00:00:08,800 --> 00:00:12,020
+The trajectory can be evaluated based on a cost function.
+
+4
+00:00:12,880 --> 00:00:17,460
+The cost function is based primarily on the deviation from the target trajectory,
+
+5
+00:00:17,740 --> 00:00:20,980
+and secondarily on other factors, like acceleration
+
+6
+00:00:21,180 --> 00:00:23,060
+and measures of passenger comfort.
+
+7
+00:00:24,040 --> 00:00:26,160
+To make the passengers feel more comfortable,
+
+8
+00:00:26,500 --> 00:00:29,000
+adjustments to control inputs should be small,
+
+9
+00:00:29,240 --> 00:00:32,480
+because actuations with large changes feel uncomfortable.
+
+10
+00:00:33,400 --> 00:00:34,940
+Depending on the situation,
+
+11
+00:00:35,120 --> 00:00:37,440
+we might need to consider further costs
+
+12
+00:00:37,640 --> 00:00:39,740
+and design cost functions for them.
+
+13
+00:00:40,660 --> 00:00:43,060
+The model and constraints and cost function
+
+14
+00:00:43,320 --> 00:00:46,600
+are combined together and solve as an optimization problem.
+
+15
+00:00:47,280 --> 00:00:51,680
+We can use one of several different optimization engines to find the best solution.
+

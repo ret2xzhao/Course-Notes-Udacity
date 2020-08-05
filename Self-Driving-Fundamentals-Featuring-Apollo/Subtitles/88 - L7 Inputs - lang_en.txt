@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:03,955
+There are two inputs our controller expects,
+
+2
+00:00:03,955 --> 00:00:07,205
+a target trajectory and the vehicle state.
+
+3
+00:00:07,205 --> 00:00:10,775
+The target trajectory comes from the planning module.
+
+4
+00:00:10,775 --> 00:00:12,730
+At each trajectory point,
+
+5
+00:00:12,730 --> 00:00:16,965
+the planning module designates a position and a reference velocity.
+
+6
+00:00:16,965 --> 00:00:20,655
+The trajectory is updated at every time step.
+
+7
+00:00:20,655 --> 00:00:22,975
+We also need to know the vehicle state,
+
+8
+00:00:22,975 --> 00:00:25,400
+which includes the position of the vehicle.
+
+9
+00:00:25,400 --> 00:00:28,730
+This gets calculated by the localization module.
+
+10
+00:00:28,730 --> 00:00:31,290
+The state also includes data we know from
+
+11
+00:00:31,290 --> 00:00:36,890
+the vehicle's internal sensors such as speed, steering, and acceleration.
+
+12
+00:00:36,890 --> 00:00:40,710
+We use these two inputs to calculate the deviation between
+
+13
+00:00:40,710 --> 00:00:45,140
+the target trajectory and the real trajectory that we're traveling.
+

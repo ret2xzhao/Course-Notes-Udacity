@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:06,209
+The last component of a PID controller is the I or integral term.
+
+2
+00:00:06,209 --> 00:00:11,099
+This term is responsible for correcting any systemic bias of the vehicle.
+
+3
+00:00:11,099 --> 00:00:14,119
+For example, the steering might be out of alignment,
+
+4
+00:00:14,119 --> 00:00:17,425
+which would result in a constant steering offset.
+
+5
+00:00:17,425 --> 00:00:22,899
+In that case, we'd need to steer a little bit to the side just to keep going straight.
+
+6
+00:00:22,899 --> 00:00:24,729
+To handle this problem,
+
+7
+00:00:24,730 --> 00:00:29,204
+the I controller penalizes the accumulated error of the system.
+
+8
+00:00:29,204 --> 00:00:31,589
+We can combine the P, I,
+
+9
+00:00:31,589 --> 00:00:35,929
+and D components to construct a PID controller.
+
