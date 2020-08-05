@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:04,559
+Well done. We have covered how perception works in
+
+2
+00:00:04,559 --> 00:00:09,480
+a self-driving car and different approaches and sensors involved.
+
+3
+00:00:09,480 --> 00:00:13,355
+You've also learned about the main tasks in perception,
+
+4
+00:00:13,355 --> 00:00:18,324
+including detection, classification, tracking, and segmentation.
+
+5
+00:00:18,324 --> 00:00:22,714
+Many of these applications rely on convolutional neural networks,
+
+6
+00:00:22,714 --> 00:00:24,144
+which you've also seen.
+
+7
+00:00:24,144 --> 00:00:28,089
+Finally, we covered sensor fusion and how to use
+
+8
+00:00:28,089 --> 00:00:32,229
+the prediction update cycle to filter sensor data together.
+
+9
+00:00:32,229 --> 00:00:38,779
+These tools are how a self-driving car uses it sensors to perceive the world.
+

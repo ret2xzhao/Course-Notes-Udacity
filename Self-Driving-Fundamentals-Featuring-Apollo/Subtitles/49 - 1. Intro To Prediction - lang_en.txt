@@ -1,0 +1,64 @@
+1
+00:00:09,560 --> 00:00:11,850
+Welcome to prediction.
+
+2
+00:00:11,849 --> 00:00:16,390
+A self-driving car needs to move among other objects on the road,
+
+3
+00:00:16,390 --> 00:00:18,625
+many of which are themselves moving,
+
+4
+00:00:18,625 --> 00:00:22,393
+such as cars, bicycles, and pedestrians.
+
+5
+00:00:22,393 --> 00:00:26,939
+Our car needs to predict the behavior of these other objects so that
+
+6
+00:00:26,940 --> 00:00:31,840
+we're able to make the best decisions about what our own vehicles should do.
+
+7
+00:00:31,839 --> 00:00:36,585
+We predict the behavior of an object by generating trajectory for it.
+
+8
+00:00:36,585 --> 00:00:38,429
+Watch this car steer to the right,
+
+9
+00:00:38,429 --> 00:00:40,905
+and it start to decelerate in front of the ramp.
+
+10
+00:00:40,905 --> 00:00:44,155
+This is the trajectory we might predict for this car.
+
+11
+00:00:44,155 --> 00:00:48,844
+We make similar predictions for all the other objects in our environment.
+
+12
+00:00:48,844 --> 00:00:51,969
+Together, they formed the prediction for the timestep.
+
+13
+00:00:51,969 --> 00:00:57,954
+At each timestep, we recalculate the predictions for every vehicle in the environment.
+
+14
+00:00:57,954 --> 00:01:03,310
+These predictions inform the decisions our vehicle makes during the planning phase.
+
+15
+00:01:03,310 --> 00:01:08,670
+In this module, you'll learn how Apollo predicts trajectories for moving
+
+16
+00:01:08,670 --> 00:01:14,879
+objects based on both their state and the location of our own self-driving car.
+

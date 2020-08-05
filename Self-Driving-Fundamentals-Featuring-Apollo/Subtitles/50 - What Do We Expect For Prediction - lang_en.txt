@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:00:03,430
+Prediction needs to be real-time,
+
+2
+00:00:03,430 --> 00:00:07,694
+that means we want the latency to be as small as possible.
+
+3
+00:00:07,694 --> 00:00:10,890
+A vehicle driving at 60 kilometers per second will
+
+4
+00:00:10,890 --> 00:00:14,035
+travel five meters every quarter of a second,
+
+5
+00:00:14,035 --> 00:00:17,100
+so we want to ensure that the next five meters is
+
+6
+00:00:17,100 --> 00:00:20,950
+free of obstacles and safe to traverse before we drive into it.
+
+7
+00:00:20,949 --> 00:00:23,515
+The next goal is accuracy.
+
+8
+00:00:23,515 --> 00:00:25,949
+If we were to predict that a vehicle in
+
+9
+00:00:25,949 --> 00:00:29,454
+an adjacent lane were trying to merge into our lane,
+
+10
+00:00:29,454 --> 00:00:30,989
+we should slow down.
+
+11
+00:00:30,989 --> 00:00:34,739
+On the other hand, it would be okay for us to maintain speed
+
+12
+00:00:34,740 --> 00:00:38,835
+if instead we thought it were going to stay in its own lane.
+
+13
+00:00:38,835 --> 00:00:43,189
+We want our predictions to be as accurate as possible,
+
+14
+00:00:43,189 --> 00:00:47,054
+so that our autonomous vehicle makes good decisions.
+
+15
+00:00:47,054 --> 00:00:51,695
+The prediction module should also be able to learn new behaviors.
+
+16
+00:00:51,695 --> 00:00:56,310
+Situations become really complicated with multiple vehicles on the road.
+
+17
+00:00:56,310 --> 00:01:01,719
+It's impossible to develop a static model that considers every single scenario.
+
+18
+00:01:01,719 --> 00:01:04,620
+That's why we need the prediction module to be
+
+19
+00:01:04,620 --> 00:01:07,780
+able to learn new behaviors as we encounter them.
+
+20
+00:01:07,780 --> 00:01:10,980
+That way, we can train it using data from
+
+21
+00:01:10,980 --> 00:01:15,920
+many different sources which allows the algorithm to improve over time.
+

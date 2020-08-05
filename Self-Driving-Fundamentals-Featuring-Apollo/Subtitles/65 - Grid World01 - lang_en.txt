@@ -1,0 +1,20 @@
+1
+00:00:00,540 --> 00:00:05,325
+A star is a classic algorithm to handle path finding.
+
+2
+00:00:05,325 --> 00:00:09,570
+Let's demonstrate how A star works using a grid world.
+
+3
+00:00:09,570 --> 00:00:13,320
+We take each cell in this world is a node we're able
+
+4
+00:00:13,320 --> 00:00:17,055
+to move from any one node to any of its adjacent nodes.
+
+5
+00:00:17,055 --> 00:00:22,540
+This particular world include some walls that block potential paths.
+

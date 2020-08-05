@@ -1,0 +1,144 @@
+1
+00:00:00,000 --> 00:00:03,480
+Recurrent neural networks or RNNs are
+
+2
+00:00:03,480 --> 00:00:08,060
+an approach to prediction that takes special advantage of time-series data.
+
+3
+00:00:08,060 --> 00:00:10,790
+Before we study RNNs specifically,
+
+4
+00:00:10,789 --> 00:00:13,479
+let's review neural networks generally.
+
+5
+00:00:13,480 --> 00:00:17,304
+Neural networks are trainable multi-layer models.
+
+6
+00:00:17,304 --> 00:00:19,614
+A neural network takes an input,
+
+7
+00:00:19,614 --> 00:00:24,539
+extracts high-level features, and uses those features to calculate an output.
+
+8
+00:00:24,539 --> 00:00:27,039
+For example, if you have a neural network
+
+9
+00:00:27,039 --> 00:00:29,945
+that classifies whether an image contains a car,
+
+10
+00:00:29,945 --> 00:00:35,469
+the middle layers of the network will extract features like tires and windows.
+
+11
+00:00:35,469 --> 00:00:38,054
+Neural networks vary in structure.
+
+12
+00:00:38,054 --> 00:00:41,454
+A basic network architecture accepts data,
+
+13
+00:00:41,454 --> 00:00:43,844
+feeds the data through multiple hidden layers,
+
+14
+00:00:43,844 --> 00:00:45,629
+and produces an output.
+
+15
+00:00:45,630 --> 00:00:52,640
+This architecture is sometimes called a multi-layer perceptron network or MLP.
+
+16
+00:00:52,640 --> 00:00:57,750
+In the training process the model will be fed lots of training data.
+
+17
+00:00:57,750 --> 00:01:01,765
+Each data record consists of an input and a label.
+
+18
+00:01:01,765 --> 00:01:05,379
+For example, the input might be an image and
+
+19
+00:01:05,379 --> 00:01:10,060
+the label might be a notation of whether the image contains a car or not.
+
+20
+00:01:10,060 --> 00:01:14,905
+Neural networks learn from data via a process called backpropagation.
+
+21
+00:01:14,905 --> 00:01:19,420
+First, the neural network takes input and produces an output.
+
+22
+00:01:19,420 --> 00:01:24,355
+Next, the computer compares that output with the ground truth label.
+
+23
+00:01:24,355 --> 00:01:27,240
+The error between the ground truth label in
+
+24
+00:01:27,239 --> 00:01:31,604
+the model's output will then propagate back through the network.
+
+25
+00:01:31,605 --> 00:01:36,180
+The hidden layers adjust their internal values or weights based
+
+26
+00:01:36,180 --> 00:01:41,000
+on the observed error in order to improve their accuracy in the future.
+
+27
+00:01:41,000 --> 00:01:43,409
+We can build recurrent neural networks with
+
+28
+00:01:43,409 --> 00:01:46,204
+multiple structures like these which we'll call
+
+29
+00:01:46,204 --> 00:01:51,400
+MLP units to extract high-level features from sequences of data.
+
+30
+00:01:51,400 --> 00:01:55,195
+Each MLP unit takes one element of the sequence as
+
+31
+00:01:55,194 --> 00:02:00,434
+input and predicts the next element of the sequence as the output.
+
+32
+00:02:00,435 --> 00:02:03,560
+In order to model the sequential relationship between
+
+33
+00:02:03,560 --> 00:02:07,820
+elements we create an extra connection between each unit
+
+34
+00:02:07,819 --> 00:02:11,120
+which means each unit makes its predictions based on
+
+35
+00:02:11,120 --> 00:02:15,740
+both the original input and the output from the previous unit.
+
+36
+00:02:15,740 --> 00:02:19,840
+This is the fundamental structure of RNNs.
+

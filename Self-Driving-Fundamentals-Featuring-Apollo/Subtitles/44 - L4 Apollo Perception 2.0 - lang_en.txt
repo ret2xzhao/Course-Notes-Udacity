@@ -1,0 +1,152 @@
+1
+00:00:00,000 --> 00:00:04,835
+The Apollo open software stack perceives obstacles,
+
+2
+00:00:04,835 --> 00:00:07,290
+traffic lights, and the lanes.
+
+3
+00:00:07,290 --> 00:00:09,960
+For three-dimensional object detection,
+
+4
+00:00:09,960 --> 00:00:12,655
+Apollo uses the Region of Interest or
+
+5
+00:00:12,654 --> 00:00:17,894
+ROI filter on the high-precision map to focus on relevant objects.
+
+6
+00:00:17,894 --> 00:00:22,824
+Apollo applies the ROI filter to both Point Cloud and image data,
+
+7
+00:00:22,824 --> 00:00:26,719
+narrowing the search scope and accelerating perception.
+
+8
+00:00:26,719 --> 00:00:31,304
+The filtered Point Cloud is then fed through a detection network.
+
+9
+00:00:31,304 --> 00:00:37,664
+The output is used to construct three-dimensional bounding boxes around the objects.
+
+10
+00:00:37,664 --> 00:00:40,850
+Finally, we use an algorithm called
+
+11
+00:00:40,850 --> 00:00:47,539
+Detection to Track Association in order to identify individual objects across timesteps.
+
+12
+00:00:47,539 --> 00:00:52,280
+This algorithm maintains a list of objects to track at each timestep,
+
+13
+00:00:52,280 --> 00:00:57,020
+and finds the best match for each object in the next timestep.
+
+14
+00:00:57,020 --> 00:00:59,260
+For traffic light classification,
+
+15
+00:00:59,259 --> 00:01:04,894
+Apollo first uses the HD map to determine whether there's a traffic light ahead.
+
+16
+00:01:04,894 --> 00:01:07,454
+If there is a traffic light ahead,
+
+17
+00:01:07,454 --> 00:01:10,784
+the HD map returns the location of the light.
+
+18
+00:01:10,784 --> 00:01:13,799
+This focuses the cameras search scope.
+
+19
+00:01:13,799 --> 00:01:17,439
+After the camera captures the image of the traffic light,
+
+20
+00:01:17,439 --> 00:01:22,274
+Apollo uses a Detection Network to localize the light within the image.
+
+21
+00:01:22,275 --> 00:01:27,070
+Apollo then extracts the traffic light from the larger image and feeds
+
+22
+00:01:27,069 --> 00:01:29,739
+the cropped image of just the traffic light to
+
+23
+00:01:29,739 --> 00:01:33,765
+a classification network that determines the color of the light.
+
+24
+00:01:33,765 --> 00:01:36,070
+If there are a lot of lights,
+
+25
+00:01:36,069 --> 00:01:40,769
+the system needs to select which lights pertained to its own lane.
+
+26
+00:01:40,769 --> 00:01:44,140
+Apollo uses the YOLO network to detect
+
+27
+00:01:44,140 --> 00:01:47,719
+the lane lines in dynamic objects including vehicles,
+
+28
+00:01:47,719 --> 00:01:50,870
+trucks, cyclists, and pedestrians.
+
+29
+00:01:50,870 --> 00:01:53,329
+After detection by the YOLO network,
+
+30
+00:01:53,329 --> 00:01:56,609
+an Online Calibration module incorporates data
+
+31
+00:01:56,609 --> 00:02:00,530
+from other sensors to adjust the lane line predictions.
+
+32
+00:02:00,530 --> 00:02:03,180
+The lane lines are ultimately incorporated into
+
+33
+00:02:03,180 --> 00:02:06,665
+a single data structure called a Virtual Lane.
+
+34
+00:02:06,665 --> 00:02:09,930
+Similarly, dynamic objects detected by
+
+35
+00:02:09,930 --> 00:02:15,450
+the YOLO network are adjusted with data from other sensors to obtain the type,
+
+36
+00:02:15,449 --> 00:02:19,274
+position, velocity, and heading, of each object.
+
+37
+00:02:19,275 --> 00:02:21,750
+Both the virtual lane and
+
+38
+00:02:21,750 --> 00:02:27,479
+the dynamic objects are passed along to the planning and control modules.
+

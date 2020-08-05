@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:06,299
+Semantic segmentation involves classifying each pixel in the image.
+
+2
+00:00:06,299 --> 00:00:11,064
+This is to understand the environment at the most detailed level possible,
+
+3
+00:00:11,064 --> 00:00:14,709
+as well as to determine the drivable area for the vehicle.
+
+4
+00:00:14,710 --> 00:00:18,370
+Semantic segmentation relies on a special type of CNN
+
+5
+00:00:18,370 --> 00:00:22,550
+called a Fully Convolutional Network or FCN.
+
+6
+00:00:22,550 --> 00:00:26,289
+The FCN replaces the flat layers at the end of
+
+7
+00:00:26,289 --> 00:00:30,469
+a traditional CNN architecture with convolutional layers.
+
+8
+00:00:30,469 --> 00:00:34,240
+Now, every layer in the network is a convolutional layer,
+
+9
+00:00:34,240 --> 00:00:37,230
+hence the name fully convolutional network.
+
+10
+00:00:37,229 --> 00:00:40,269
+An FCN provides a pixel by
+
+11
+00:00:40,270 --> 00:00:45,030
+pixel output that we can layer on top of our original input image.
+
+12
+00:00:45,030 --> 00:00:49,780
+One complication that we have to account for is size.
+
+13
+00:00:49,780 --> 00:00:53,265
+In a typical CNN, after many convolutions,
+
+14
+00:00:53,265 --> 00:00:57,649
+the resulting shape is much smaller than the original input image.
+
+15
+00:00:57,649 --> 00:01:00,429
+In order to segment the pixels though,
+
+16
+00:01:00,429 --> 00:01:04,090
+our output size must match the size of the original image.
+
+17
+00:01:04,090 --> 00:01:08,395
+We can achieve this by upsampling the intermediate output
+
+18
+00:01:08,394 --> 00:01:13,534
+until the size of the final output matches the size of the original input image.
+
+19
+00:01:13,534 --> 00:01:17,640
+The first half of the network is often called the encoder because
+
+20
+00:01:17,640 --> 00:01:22,510
+this part of the network is extracting and encoding the features of the input image.
+
+21
+00:01:22,510 --> 00:01:26,910
+The second half of the network is often called the decoder because it's
+
+22
+00:01:26,909 --> 00:01:31,479
+decoding those features and applying them to the output.
+

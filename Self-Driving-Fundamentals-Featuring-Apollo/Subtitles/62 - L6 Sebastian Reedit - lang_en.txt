@@ -1,0 +1,76 @@
+1
+00:00:00,000 --> 00:00:02,040
+Hi.This is Sebastian again.
+
+2
+00:00:02,040 --> 00:00:07,125
+I'm back on a free course of fundamentals of self-driving cars built with Baidu.
+
+3
+00:00:07,125 --> 00:00:13,019
+This is now a beautiful new thing coming up called planning.
+
+4
+00:00:13,019 --> 00:00:14,529
+You've gotten all the elements.
+
+5
+00:00:14,529 --> 00:00:15,689
+You know how to perceive.
+
+6
+00:00:15,689 --> 00:00:17,439
+You know how to predict.
+
+7
+00:00:17,440 --> 00:00:19,390
+Now, you've got to make decisions,
+
+8
+00:00:19,390 --> 00:00:24,945
+and decision-making is hard but also fascinating and very rewarding.
+
+9
+00:00:24,945 --> 00:00:27,745
+We're going to talk about planning in two different contexts.
+
+10
+00:00:27,745 --> 00:00:31,450
+One is at the very symbolic city level where you're going to
+
+11
+00:00:31,449 --> 00:00:35,049
+plan how much turn to take to get to a target destination and
+
+12
+00:00:35,049 --> 00:00:38,349
+one is at the motion trajectory level where you decide which
+
+13
+00:00:38,350 --> 00:00:42,780
+exact turn the car should take as it executes a certain maneuver.
+
+14
+00:00:42,780 --> 00:00:44,149
+These trajectories are not
+
+15
+00:00:44,149 --> 00:00:49,619
+just time curves and these trajectories are not just space curves.
+
+16
+00:00:49,619 --> 00:00:54,464
+They're also time curves because you might choose to go really fast or really slow,
+
+17
+00:00:54,465 --> 00:00:56,550
+and in planning, you have to consider how fast you
+
+18
+00:00:56,549 --> 00:00:58,859
+can go to make sure you have a viable plan.
+
+19
+00:00:58,859 --> 00:01:03,280
+So let's dive into the fascinating world of planning.
+

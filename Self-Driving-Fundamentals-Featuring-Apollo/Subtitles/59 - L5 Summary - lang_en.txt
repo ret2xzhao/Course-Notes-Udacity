@@ -1,0 +1,64 @@
+1
+00:00:00,080 --> 00:00:02,705
+Congratulations.
+
+2
+00:00:02,705 --> 00:00:06,785
+You've learned how to predict the behavior of other objects on the road,
+
+3
+00:00:06,785 --> 00:00:10,855
+and how to describe their behavior using trajectories.
+
+4
+00:00:10,855 --> 00:00:12,800
+Let's recap this lesson.
+
+5
+00:00:12,800 --> 00:00:16,929
+We first introduced how to transform complicated vehicle movements,
+
+6
+00:00:16,929 --> 00:00:18,975
+into lane transition sequences.
+
+7
+00:00:18,975 --> 00:00:22,120
+This allows us to greatly reduce the number of scenarios,
+
+8
+00:00:22,120 --> 00:00:23,870
+and make predictions faster.
+
+9
+00:00:23,870 --> 00:00:27,335
+Then, we introduced how to use existing observations,
+
+10
+00:00:27,335 --> 00:00:29,320
+represented by lane sequences,
+
+11
+00:00:29,320 --> 00:00:32,384
+to train neural networks, to make predictions.
+
+12
+00:00:32,384 --> 00:00:36,949
+Finally, we incorporated lane sequence prediction with vehicle physics,
+
+13
+00:00:36,950 --> 00:00:40,400
+to generate the estimated trajectories for each object.
+
+14
+00:00:40,399 --> 00:00:45,354
+Motion predictions are critical to build the collision-free path in the planning module.
+
+15
+00:00:45,354 --> 00:00:48,699
+I hope the following demonstration of Apollo's prediction module
+
+16
+00:00:48,700 --> 00:00:53,380
+gives you an intuition for how prediction is done in real life.
+

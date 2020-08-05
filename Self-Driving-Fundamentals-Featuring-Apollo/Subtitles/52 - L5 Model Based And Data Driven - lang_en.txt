@@ -1,0 +1,124 @@
+1
+00:00:00,000 --> 00:00:03,245
+We'll introduce two different prediction approaches;
+
+2
+00:00:03,245 --> 00:00:06,794
+model-based prediction and data-driven prediction.
+
+3
+00:00:06,794 --> 00:00:08,879
+Suppose our car pulls up to
+
+4
+00:00:08,880 --> 00:00:13,780
+a T-shaped intersection and sees another car approaching from the left.
+
+5
+00:00:13,779 --> 00:00:16,800
+At this moment, we're not yet sure whether
+
+6
+00:00:16,800 --> 00:00:20,745
+that other car is going to turn right or go straight.
+
+7
+00:00:20,745 --> 00:00:23,100
+Using the model-based approach,
+
+8
+00:00:23,100 --> 00:00:28,090
+we actually construct two candidate predictive models for this scenario.
+
+9
+00:00:28,089 --> 00:00:32,469
+One model describes the movement of that other vehicle turning right,
+
+10
+00:00:32,469 --> 00:00:35,015
+which we illustrate with the green trajectory.
+
+11
+00:00:35,015 --> 00:00:39,889
+The other model describes the movement of that vehicle continuing straight,
+
+12
+00:00:39,889 --> 00:00:42,515
+which we illustrate with the blue trajectory.
+
+13
+00:00:42,515 --> 00:00:47,810
+At this instant, we think either of those two models is equally likely.
+
+14
+00:00:47,810 --> 00:00:51,655
+So, we have two candidate models each with its own trajectory.
+
+15
+00:00:51,655 --> 00:00:54,475
+We observe the movement of the moving vehicle
+
+16
+00:00:54,475 --> 00:00:57,675
+to see if it matches one of those trajectories.
+
+17
+00:00:57,674 --> 00:01:01,949
+If we were to see the vehicle start to shift lanes to the left,
+
+18
+00:01:01,950 --> 00:01:03,720
+we would become more confident that
+
+19
+00:01:03,719 --> 00:01:07,000
+the vehicle was ultimately planning to continue straight.
+
+20
+00:01:07,000 --> 00:01:08,569
+On the other hand,
+
+21
+00:01:08,569 --> 00:01:13,139
+if we were to see the vehicle pass the region where it's illegal to shift lanes,
+
+22
+00:01:13,140 --> 00:01:17,935
+we would become more confident that the vehicle were ultimately turning to the right.
+
+23
+00:01:17,935 --> 00:01:20,885
+That's how model-based prediction works.
+
+24
+00:01:20,885 --> 00:01:27,165
+Data-driven prediction uses machine learning to train a model based on observations.
+
+25
+00:01:27,165 --> 00:01:29,880
+Once the machine learning model is trained,
+
+26
+00:01:29,879 --> 00:01:33,185
+we can use it to make predictions in the real world.
+
+27
+00:01:33,185 --> 00:01:38,640
+The advantage of data-driven prediction is that the more data we add to the training set,
+
+28
+00:01:38,640 --> 00:01:40,745
+the better our model gets.
+
+29
+00:01:40,745 --> 00:01:45,030
+The advantage of the model-based approach is that it's intuitive and
+
+30
+00:01:45,030 --> 00:01:50,364
+incorporates our existing knowledge of physics and traffic laws and human behavior.
+
+31
+00:01:50,364 --> 00:01:53,599
+Which approach do you think is better?
+

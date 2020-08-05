@@ -1,0 +1,84 @@
+1
+00:00:00,000 --> 00:00:06,245
+Apollo obstacle detection uses both lidar and radar.
+
+2
+00:00:06,245 --> 00:00:10,905
+The main algorithm for fusing their output is the Kalman filter.
+
+3
+00:00:10,904 --> 00:00:13,489
+A Kalman filter has two steps.
+
+4
+00:00:13,490 --> 00:00:16,079
+The first step is to predict state.
+
+5
+00:00:16,079 --> 00:00:19,214
+The second step is to update measurements.
+
+6
+00:00:19,214 --> 00:00:21,664
+Imagine we're tracking the pedestrian,
+
+7
+00:00:21,664 --> 00:00:26,339
+the state here includes the position and speed of the pedestrian.
+
+8
+00:00:26,339 --> 00:00:29,954
+We start with what we already know about the pedestrian state.
+
+9
+00:00:29,954 --> 00:00:34,170
+We use that information to perform the first step of the Kalman filter,
+
+10
+00:00:34,170 --> 00:00:37,874
+which is to predict the future state of the pedestrian.
+
+11
+00:00:37,874 --> 00:00:41,215
+The next step is the measurement update.
+
+12
+00:00:41,215 --> 00:00:46,995
+We use new sensor measurements to update our belief about the state of the pedestrian.
+
+13
+00:00:46,994 --> 00:00:53,009
+The Kalman filter algorithm is an endless loop of prediction and update steps.
+
+14
+00:00:53,009 --> 00:00:55,589
+There are actually two approaches to
+
+15
+00:00:55,590 --> 00:01:00,200
+the measurement update step, synchronous and asynchronous.
+
+16
+00:01:00,200 --> 00:01:06,150
+Synchronous fusion updates the measurements from different sensors all at the same time,
+
+17
+00:01:06,150 --> 00:01:12,570
+whereas asynchronous fusion updates the sensor measurements one at a time as they arrive.
+
+18
+00:01:12,569 --> 00:01:18,899
+Sensor fusion improves perception performance because the sensors compliment each other.
+
+19
+00:01:18,900 --> 00:01:21,880
+Fusion also reduces tracking error,
+
+20
+00:01:21,879 --> 00:01:24,560
+so we can be more confident in our predictions
+
+21
+00:01:24,560 --> 00:01:28,629
+about the location of other objects on the road.
+
