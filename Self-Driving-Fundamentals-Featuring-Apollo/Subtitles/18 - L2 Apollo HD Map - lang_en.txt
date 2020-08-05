@@ -1,0 +1,120 @@
+1
+00:00:00,140 --> 00:00:05,919
+Apollo high-definition maps are specifically designed for self-driving cars.
+
+2
+00:00:05,919 --> 00:00:09,810
+The Apollo maps contain road definitions, intersections,
+
+3
+00:00:09,810 --> 00:00:12,169
+traffic signals, lane rules,
+
+4
+00:00:12,169 --> 00:00:15,289
+and other elements that the car uses to navigate.
+
+5
+00:00:15,289 --> 00:00:19,189
+High-definition maps help driverless cars in many areas.
+
+6
+00:00:19,190 --> 00:00:23,865
+For example, a high-definition map will often record the precise location and
+
+7
+00:00:23,864 --> 00:00:28,799
+height of traffic lights greatly reducing the difficulty of perception.
+
+8
+00:00:28,800 --> 00:00:33,000
+High-definition maps not only reduce computational demand,
+
+9
+00:00:33,000 --> 00:00:36,030
+they also ensure the safety of autonomous vehicles by
+
+10
+00:00:36,030 --> 00:00:39,975
+providing detailed information about the driving environment.
+
+11
+00:00:39,975 --> 00:00:43,829
+Keeping these maps up-to-date is a major effort.
+
+12
+00:00:43,829 --> 00:00:46,710
+High-definition maps need to be constantly
+
+13
+00:00:46,710 --> 00:00:50,495
+verified and updated by a fleet of survey vehicles.
+
+14
+00:00:50,494 --> 00:00:55,534
+In addition, these maps can reach single-digit centimeter level precision,
+
+15
+00:00:55,534 --> 00:00:58,849
+which is state-of-the-art for mapping accuracy.
+
+16
+00:00:58,850 --> 00:01:03,745
+In China, Apollo has extensive high-definition map data.
+
+17
+00:01:03,744 --> 00:01:08,844
+Apollo has already mapped every high-speed road in China, and by 2020,
+
+18
+00:01:08,844 --> 00:01:11,670
+Apollo plans to cover all national highways in
+
+19
+00:01:11,670 --> 00:01:15,045
+China along with many other high-grade roads.
+
+20
+00:01:15,045 --> 00:01:18,234
+There are many formats for high-definition maps.
+
+21
+00:01:18,234 --> 00:01:21,329
+Different formats can cause system incompatibility.
+
+22
+00:01:21,329 --> 00:01:24,034
+So, in order to facilitate data sharing,
+
+23
+00:01:24,034 --> 00:01:29,694
+Apollo HD maps use the OpenDRIVE format in industry-wide mapping standard.
+
+24
+00:01:29,694 --> 00:01:36,009
+OpenDRIVE is like an API that makes it easy for everyone to read the same map data.
+
+25
+00:01:36,010 --> 00:01:39,015
+Apollo has also contributed improvements to
+
+26
+00:01:39,015 --> 00:01:43,140
+OpenDRIVE resulting in the Apollo OpenDRIVE standard.
+
+27
+00:01:43,140 --> 00:01:47,905
+These improvements make the format more suitable for self-driving cars.
+
+28
+00:01:47,905 --> 00:01:51,480
+Apollo has developed a sophisticated system for
+
+29
+00:01:51,480 --> 00:01:55,530
+map production which automates 90 percent of the mapping pipeline.
+
+30
+00:01:55,530 --> 00:02:01,159
+Coming up, we'll focus on the construction of Apollo high-definition maps.
+

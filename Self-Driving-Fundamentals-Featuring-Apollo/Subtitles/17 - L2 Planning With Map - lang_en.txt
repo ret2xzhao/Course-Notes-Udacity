@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:05,644
+Just as our localization and perception software relies on the high-definition map,
+
+2
+00:00:05,644 --> 00:00:07,944
+so does our planning software.
+
+3
+00:00:07,945 --> 00:00:12,495
+A high definition map helps our vehicle find suitable driving space.
+
+4
+00:00:12,494 --> 00:00:17,219
+It also helps our planner identify different possible routing options,
+
+5
+00:00:17,219 --> 00:00:19,649
+and helps our prediction software forecast
+
+6
+00:00:19,649 --> 00:00:22,644
+future locations for other vehicles on the road.
+
+7
+00:00:22,644 --> 00:00:25,859
+For example, a high definition map helps the vehicle
+
+8
+00:00:25,859 --> 00:00:29,884
+identify the exact center line of a lane on the road.
+
+9
+00:00:29,885 --> 00:00:34,710
+That way, the vehicle can drive as close as possible to the center.
+
+10
+00:00:34,710 --> 00:00:37,299
+In areas with slow speed limits,
+
+11
+00:00:37,299 --> 00:00:39,449
+crosswalks, or speed bumps,
+
+12
+00:00:39,450 --> 00:00:45,160
+a high-definition map allows the vehicle to look ahead and slow down in advance.
+
+13
+00:00:45,159 --> 00:00:48,638
+What's more, if there's an obstruction ahead,
+
+14
+00:00:48,639 --> 00:00:50,995
+the vehicle might need to change lanes.
+
+15
+00:00:50,994 --> 00:00:53,769
+A high-definition map can help the vehicle narrow
+
+16
+00:00:53,770 --> 00:00:57,900
+its options so that it can select the best maneuver.
+

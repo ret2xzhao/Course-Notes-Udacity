@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:02,765
+Hi, my name is Sebastian Thrun.
+
+2
+00:00:02,765 --> 00:00:04,240
+I teach at Stanford University.
+
+3
+00:00:04,240 --> 00:00:06,304
+I'm the founder of Udacity.
+
+4
+00:00:06,304 --> 00:00:09,550
+I want to welcome you to this free course,
+
+5
+00:00:09,550 --> 00:00:11,795
+Fundamentals of Self-Driving Car.
+
+6
+00:00:11,794 --> 00:00:16,030
+We've built this with one of the Internet giants in China called Baidu,
+
+7
+00:00:16,030 --> 00:00:17,554
+which I'm sure you know.
+
+8
+00:00:17,553 --> 00:00:19,648
+Baidu has actually over the last years developed
+
+9
+00:00:19,649 --> 00:00:23,169
+an open source framework for self-driving cars called Apollo.
+
+10
+00:00:23,170 --> 00:00:25,645
+This course is based on Apollo,
+
+11
+00:00:25,643 --> 00:00:29,268
+so everybody in the world can build their self-driving car.
+
+12
+00:00:29,268 --> 00:00:30,718
+Now, in this course,
+
+13
+00:00:30,719 --> 00:00:33,359
+you won't have to program, it's very conceptual.
+
+14
+00:00:33,359 --> 00:00:35,280
+But if you like what you see and you want to
+
+15
+00:00:35,280 --> 00:00:37,530
+be more proficient in building self-driving cars,
+
+16
+00:00:37,530 --> 00:00:40,515
+we invite you once you complete this course to
+
+17
+00:00:40,515 --> 00:00:44,000
+graduate to our Nanodegree Introduction to Self-Driving Car,
+
+18
+00:00:44,000 --> 00:00:45,820
+where you can become an expert.
+
+19
+00:00:45,820 --> 00:00:47,798
+But so far, please,
+
+20
+00:00:47,798 --> 00:00:50,500
+enjoy this class we've built with Baidu.
+

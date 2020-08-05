@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:03,600
+Congratulations, you've learned about
+
+2
+00:00:03,600 --> 00:00:08,304
+high-definition maps and why they are so important for self-driving cars.
+
+3
+00:00:08,304 --> 00:00:14,184
+In particular, high-definition maps are critical to the performance of the localization,
+
+4
+00:00:14,185 --> 00:00:17,050
+perception, and planning systems.
+
+5
+00:00:17,050 --> 00:00:18,734
+You have already seen
+
+6
+00:00:18,734 --> 00:00:24,384
+Apollo high-definition maps along with the full process for constructing them.
+
+7
+00:00:24,385 --> 00:00:28,595
+By understanding the roadmaps play in a self-driving car,
+
+8
+00:00:28,594 --> 00:00:35,769
+you're one step closer to understanding how our entire self-driven car works.
+

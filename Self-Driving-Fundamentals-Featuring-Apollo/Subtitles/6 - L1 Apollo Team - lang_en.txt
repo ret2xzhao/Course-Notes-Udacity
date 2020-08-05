@@ -1,0 +1,108 @@
+1
+00:00:00,000 --> 00:00:02,759
+Hello Apollo team.
+
+2
+00:00:02,759 --> 00:00:07,779
+This amazing team is building an incredible self-driving car platform.
+
+3
+00:00:07,780 --> 00:00:13,275
+Apollo is an open software platform that provides hardware specifications,
+
+4
+00:00:13,275 --> 00:00:16,785
+on vehicle software, and cloud services.
+
+5
+00:00:16,785 --> 00:00:21,954
+Any partner can use this platform to develop its own autonomous driving system.
+
+6
+00:00:21,954 --> 00:00:27,000
+Baidu started as an Internet search engine company in China and now
+
+7
+00:00:27,000 --> 00:00:32,000
+has transformed into artificial intelligence company with offices around the world.
+
+8
+00:00:32,000 --> 00:00:36,109
+We are here today in our Apollo garage in California.
+
+9
+00:00:36,109 --> 00:00:40,524
+Baidu aims to make a complex work simpler through technology.
+
+10
+00:00:40,524 --> 00:00:46,155
+The Apollo ecosystem is one of Baidu's most important open source contributions.
+
+11
+00:00:46,155 --> 00:00:50,240
+We have opened up our self-driving capabilities so that engineers
+
+12
+00:00:50,240 --> 00:00:54,870
+around the world can build on Apollo to create their own self-driving cars.
+
+13
+00:00:54,869 --> 00:00:59,419
+Apollo provides world leading HD map services
+
+14
+00:00:59,420 --> 00:01:02,890
+and then open autonomous driving simulation engine.
+
+15
+00:01:02,890 --> 00:01:05,900
+Apollo accelerates the development,
+
+16
+00:01:05,900 --> 00:01:09,920
+testing, and deployment of autonomous vehicles.
+
+17
+00:01:09,920 --> 00:01:12,445
+As participation in Apollo grows,
+
+18
+00:01:12,444 --> 00:01:16,954
+more accurate data will be available to everybody.
+
+19
+00:01:16,954 --> 00:01:19,414
+Compared to a closed ecosystem,
+
+20
+00:01:19,415 --> 00:01:24,030
+Apollo can evolve faster and bring greater benefits to participants
+
+21
+00:01:24,030 --> 00:01:28,170
+Our open platform is the result of work by academia,
+
+22
+00:01:28,170 --> 00:01:31,165
+industry researchers, and the production engineers.
+
+23
+00:01:31,165 --> 00:01:34,795
+The Apollo technology framework consists of four layers,
+
+24
+00:01:34,795 --> 00:01:37,930
+reference vehicle platform, reference hardware platform,
+
+25
+00:01:37,930 --> 00:01:41,655
+open software platform, and the cloud service platform.
+
+26
+00:01:41,655 --> 00:01:45,400
+As we proceed, you'll learn about each of
+
+27
+00:01:45,400 --> 00:01:50,960
+these layers and how they integrate to create an end-to-end self-driving car.
+

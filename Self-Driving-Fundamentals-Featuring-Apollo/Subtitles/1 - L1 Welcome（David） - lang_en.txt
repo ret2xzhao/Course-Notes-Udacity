@@ -1,0 +1,40 @@
+1
+00:00:08,929 --> 00:00:15,535
+Hello. Welcome to Self-driving Car Fundamentals featuring Apollo.
+
+2
+00:00:15,535 --> 00:00:21,115
+I'm David Silver, I teach the self-driving car Engineer Nanodegree Program at Udacity,
+
+3
+00:00:21,114 --> 00:00:26,469
+which is a program that trains software engineers to work on autonomous vehicles.
+
+4
+00:00:26,469 --> 00:00:32,109
+I am really excited to teach this free course about how self-driving cars work,
+
+5
+00:00:32,109 --> 00:00:34,424
+alongside our partners from Baidu.
+
+6
+00:00:34,424 --> 00:00:38,684
+Together, we'll study the core components of self-driving cars.
+
+7
+00:00:38,685 --> 00:00:43,100
+In particular, we'll see how Baidu's Apollo open-source,
+
+8
+00:00:43,100 --> 00:00:47,289
+self-driving car software implements these core components.
+
+9
+00:00:47,289 --> 00:00:49,144
+By the end of this course,
+
+10
+00:00:49,145 --> 00:00:55,690
+you'll have seen how self-driving cars work from one end to the other. Let's get started.
+

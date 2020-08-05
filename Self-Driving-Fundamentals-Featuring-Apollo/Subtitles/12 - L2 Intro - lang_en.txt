@@ -1,0 +1,48 @@
+1
+00:00:10,620 --> 00:00:11,260
+Hello! 
+
+2
+00:00:11,700 --> 00:00:14,120
+Welcome to the lesson on HD Maps. 
+
+3
+00:00:14,800 --> 00:00:16,180
+To start thinking about maps,
+
+4
+00:00:16,600 --> 00:00:18,200
+let’s start with a simple question. 
+
+5
+00:00:18,860 --> 00:00:22,420
+What is the most common navigation map you use? 
+
+6
+00:00:23,320 --> 00:00:26,460
+It’s probably the map in your car or on your phone.
+
+7
+00:00:27,540 --> 00:00:29,100
+When I want to go somewhere,
+
+8
+00:00:29,360 --> 00:00:32,460
+I just input the destination where I want to go, 
+
+9
+00:00:32,700 --> 00:00:35,220
+and the map provides the optimal path.
+
+10
+00:00:36,100 --> 00:00:39,720
+But a self-driving car needs an even more detailed map.
+
+11
+00:00:40,300 --> 00:00:42,600
+Apollo uses a high-definition map, 
+
+12
+00:00:42,980 --> 00:00:45,520
+which we’ll learn about in this lesson.
+

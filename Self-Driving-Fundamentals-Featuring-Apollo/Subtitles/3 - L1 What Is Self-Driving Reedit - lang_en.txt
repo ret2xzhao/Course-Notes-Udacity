@@ -1,0 +1,432 @@
+1
+00:00:00,160 --> 00:00:04,544
+Before we learn how self-driving cars work today,
+
+2
+00:00:04,544 --> 00:00:07,824
+let's look at the history of transportation.
+
+3
+00:00:07,825 --> 00:00:10,355
+One million years ago,
+
+4
+00:00:10,355 --> 00:00:14,385
+our human ancestors began to walk and run on two feet.
+
+5
+00:00:14,384 --> 00:00:17,100
+This liberated our hands so that eventually,
+
+6
+00:00:17,100 --> 00:00:20,635
+we could do things like walk and text at the same time.
+
+7
+00:00:20,635 --> 00:00:23,054
+About 4,000 years ago,
+
+8
+00:00:23,054 --> 00:00:25,914
+humans began building horse-drawn carriages.
+
+9
+00:00:25,914 --> 00:00:31,024
+Carriages are actually one of the earliest examples of humans building vehicles.
+
+10
+00:00:31,024 --> 00:00:33,015
+One hundred years ago,
+
+11
+00:00:33,015 --> 00:00:35,799
+humans invented modern automobiles.
+
+12
+00:00:35,799 --> 00:00:40,954
+Cars make it possible to go further and faster than ever before.
+
+13
+00:00:40,954 --> 00:00:46,349
+Now, we are at the cusp of a new era of self-driving cars.
+
+14
+00:00:46,350 --> 00:00:51,000
+We hope that self-driving cars make the world safer and more productive,
+
+15
+00:00:51,000 --> 00:00:53,414
+and better than ever before.
+
+16
+00:00:53,414 --> 00:00:56,034
+Why do we need self-driving cars?
+
+17
+00:00:56,034 --> 00:00:59,039
+The most important reason is safety.
+
+18
+00:00:59,039 --> 00:01:03,225
+Human drivers wind up in a lot of automobile collisions.
+
+19
+00:01:03,225 --> 00:01:09,780
+Over one million people around the world die in automobile crashes every single year.
+
+20
+00:01:09,780 --> 00:01:13,855
+Self-driving cars have a lot of advantages over human drivers.
+
+21
+00:01:13,855 --> 00:01:17,155
+In particular, self-driving cars don't get drunk,
+
+22
+00:01:17,155 --> 00:01:18,750
+and they don't get tired,
+
+23
+00:01:18,750 --> 00:01:20,674
+and they don't get distracted.
+
+24
+00:01:20,674 --> 00:01:23,670
+Self-driving cars also learn from each other.
+
+25
+00:01:23,670 --> 00:01:28,340
+As humans, every one of us has to learn to drive from scratch,
+
+26
+00:01:28,340 --> 00:01:31,040
+and we make most of the same mistakes that our parents
+
+27
+00:01:31,040 --> 00:01:34,245
+and grandparents made when they were learning to drive.
+
+28
+00:01:34,245 --> 00:01:36,700
+Self-driving cars, on the other hand,
+
+29
+00:01:36,700 --> 00:01:41,314
+learn to drive from every other self-driving car that has ever been on the road.
+
+30
+00:01:41,314 --> 00:01:45,414
+So they immediately start out as experienced drivers.
+
+31
+00:01:45,415 --> 00:01:49,220
+Self-driving cars also have benefits beyond safety.
+
+32
+00:01:49,219 --> 00:01:52,039
+Think about the last time you went to the grocery store,
+
+33
+00:01:52,040 --> 00:01:53,359
+maybe over the weekend,
+
+34
+00:01:53,359 --> 00:01:57,194
+and had to drive around and around looking for a parking spot.
+
+35
+00:01:57,194 --> 00:02:00,229
+Now imagine a future world in which parking doesn't
+
+36
+00:02:00,230 --> 00:02:04,400
+exist because a self-driving vehicle drops you off right where you need to be,
+
+37
+00:02:04,400 --> 00:02:07,370
+just like a taxi or a ride-sharing vehicle.
+
+38
+00:02:07,370 --> 00:02:11,444
+Think about how much more pleasant and a less stressful that would be.
+
+39
+00:02:11,444 --> 00:02:14,854
+The Society of Automotive Engineers identifies
+
+40
+00:02:14,854 --> 00:02:19,375
+six levels of autonomous vehicles, zero through five.
+
+41
+00:02:19,375 --> 00:02:22,215
+Level zero is the base level.
+
+42
+00:02:22,215 --> 00:02:26,689
+At this level, the driver is the sole decision-maker for the system.
+
+43
+00:02:26,689 --> 00:02:28,969
+The driver controls the steering wheel,
+
+44
+00:02:28,969 --> 00:02:32,685
+throttle, brakes, and all other vehicle controls.
+
+45
+00:02:32,685 --> 00:02:35,789
+Level one is driver assistance.
+
+46
+00:02:35,789 --> 00:02:41,734
+At this level, the vehicle supports the driver with either steering or acceleration.
+
+47
+00:02:41,735 --> 00:02:43,855
+Cruise control, for example,
+
+48
+00:02:43,854 --> 00:02:46,435
+is a level one automation system.
+
+49
+00:02:46,435 --> 00:02:50,069
+At this level, drivers must stay fully engaged,
+
+50
+00:02:50,069 --> 00:02:53,555
+but they can give up some control to the autonomous system.
+
+51
+00:02:53,555 --> 00:02:56,694
+Level two is partial automation.
+
+52
+00:02:56,694 --> 00:03:00,340
+At this stage, the vehicle controls several functions
+
+53
+00:03:00,340 --> 00:03:04,890
+automatically such as automatic cruise control and lane keeping.
+
+54
+00:03:04,889 --> 00:03:07,269
+However, the driver must still perform
+
+55
+00:03:07,270 --> 00:03:10,760
+any functions that the autonomous system does not handle.
+
+56
+00:03:10,759 --> 00:03:14,159
+Level three is conditional automation.
+
+57
+00:03:14,159 --> 00:03:16,509
+The vehicle drives autonomously,
+
+58
+00:03:16,509 --> 00:03:20,229
+but the driver must be ready to take over whenever necessary.
+
+59
+00:03:20,229 --> 00:03:23,174
+Level four is high automation.
+
+60
+00:03:23,175 --> 00:03:26,800
+At this level, the vehicle controls all aspects of
+
+61
+00:03:26,800 --> 00:03:28,510
+the driving experience and there is
+
+62
+00:03:28,509 --> 00:03:32,079
+no expectation that the human driver will ever intervene.
+
+63
+00:03:32,080 --> 00:03:34,230
+In fact, at this level,
+
+64
+00:03:34,229 --> 00:03:36,759
+it's possible that the vehicle might not even have
+
+65
+00:03:36,759 --> 00:03:39,664
+a steering wheel or driver controls at all.
+
+66
+00:03:39,664 --> 00:03:41,199
+However, at this level,
+
+67
+00:03:41,199 --> 00:03:44,199
+the vehicle may be restricted to certain areas.
+
+68
+00:03:44,199 --> 00:03:46,929
+Often, this is called a geofence.
+
+69
+00:03:46,930 --> 00:03:51,605
+The vehicle can operate completely autonomously within a certain geofence,
+
+70
+00:03:51,604 --> 00:03:53,449
+but outside of that geofence,
+
+71
+00:03:53,449 --> 00:03:59,185
+the vehicle is either unable to operate autonomously or maybe unable to operate at all.
+
+72
+00:03:59,185 --> 00:04:03,873
+Level five, the highest level, is full automation.
+
+73
+00:04:03,873 --> 00:04:07,159
+At this level, the vehicle operates completely
+
+74
+00:04:07,159 --> 00:04:11,329
+autonomously anywhere and everywhere that a human can drive.
+
+75
+00:04:11,330 --> 00:04:17,689
+Level five should be automation as good or better than a human driver in all scenarios.
+
+76
+00:04:17,689 --> 00:04:22,035
+Research into self-driving cars began in the 1980s.
+
+77
+00:04:22,035 --> 00:04:26,210
+In 1986, Carnegie Mellon University's NavLab
+
+78
+00:04:26,209 --> 00:04:30,719
+built one of the first self-driving cars that was ever controlled by a computer.
+
+79
+00:04:30,720 --> 00:04:36,370
+In 1995, Mercedes Benz completed the Eureka Prometheus Project,
+
+80
+00:04:36,370 --> 00:04:40,014
+which was the largest autonomous vehicle research and development program
+
+81
+00:04:40,014 --> 00:04:41,959
+in history up to that time.
+
+82
+00:04:41,959 --> 00:04:46,329
+This project redefined the state of the art for self-driving vehicles.
+
+83
+00:04:46,329 --> 00:04:49,659
+Many universities and car manufacturers participated in
+
+84
+00:04:49,660 --> 00:04:54,185
+this pan-European project from 1987-1995.
+
+85
+00:04:54,185 --> 00:04:57,295
+In 2005, Sebastian Thrun,
+
+86
+00:04:57,295 --> 00:04:59,295
+who was also the founder of Udacity,
+
+87
+00:04:59,295 --> 00:05:02,620
+led the Stanford racing team that won the DARPA Grand Challenge,
+
+88
+00:05:02,620 --> 00:05:07,120
+a 100 mile self-driving car race through the California desert.
+
+89
+00:05:07,120 --> 00:05:09,540
+After winning the DARPA Grand Challenge,
+
+90
+00:05:09,540 --> 00:05:14,965
+Sebastian joined Google and started the Google self-driving car project in 2009.
+
+91
+00:05:14,964 --> 00:05:17,009
+Over the last few years,
+
+92
+00:05:17,009 --> 00:05:21,300
+self-driving car tests have launched in San Francisco, and Phoenix,
+
+93
+00:05:21,300 --> 00:05:23,189
+and Singapore, and Pittsburgh,
+
+94
+00:05:23,189 --> 00:05:24,759
+and Las Vegas, and Detroit,
+
+95
+00:05:24,759 --> 00:05:26,194
+and Boston, and Beijing,
+
+96
+00:05:26,194 --> 00:05:29,154
+and many other cities all around the world.
+
+97
+00:05:29,154 --> 00:05:35,944
+In 2017, Baidu released an open-source self-driving car project called Apollo.
+
+98
+00:05:35,944 --> 00:05:39,230
+This platform helps partners integrate their own vehicles and
+
+99
+00:05:39,230 --> 00:05:43,160
+hardware systems to build complete autonomous systems.
+
+100
+00:05:43,160 --> 00:05:48,600
+An autonomous vehicle is comprised of special purpose computers and sensors.
+
+101
+00:05:48,600 --> 00:05:54,215
+Autonomous computing units are 10 times faster than personal computers or more.
+
+102
+00:05:54,214 --> 00:05:55,894
+In the Apollo system,
+
+103
+00:05:55,894 --> 00:05:58,709
+the vehicle's onboard computing units are supported
+
+104
+00:05:58,709 --> 00:06:02,174
+by a massively powerful cloud cluster.
+
+105
+00:06:02,175 --> 00:06:05,939
+Any given autonomous vehicle has many advanced sensors that
+
+106
+00:06:05,939 --> 00:06:09,564
+perform tasks like perception and localization.
+
+107
+00:06:09,564 --> 00:06:12,629
+With artificial intelligence and these sensors,
+
+108
+00:06:12,629 --> 00:06:17,779
+the vehicle can operate itself independently of any human driver.
+

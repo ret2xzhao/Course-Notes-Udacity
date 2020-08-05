@@ -1,0 +1,648 @@
+1
+00:00:12,260 --> 00:00:17,860
+Hello. I teach the Self-driving Car Engineer Nanodegree program at Udacity,
+
+2
+00:00:17,860 --> 00:00:19,485
+which is a nine-month program,
+
+3
+00:00:19,485 --> 00:00:23,155
+that train software engineers to work on autonomous vehicles.
+
+4
+00:00:23,155 --> 00:00:25,900
+Before, I was ever a student at Udacity,
+
+5
+00:00:25,900 --> 00:00:27,190
+or an employee at Udacity,
+
+6
+00:00:27,190 --> 00:00:28,625
+I was actually a student.
+
+7
+00:00:28,625 --> 00:00:32,590
+I was for many years a normal Silicon Valley web software engineer
+
+8
+00:00:32,590 --> 00:00:33,880
+working in Ruby on Rails.
+
+9
+00:00:33,880 --> 00:00:35,635
+A few years ago,
+
+10
+00:00:35,635 --> 00:00:38,250
+I got really excited about self-driving cars,
+
+11
+00:00:38,250 --> 00:00:44,360
+but I didn't have any background in robotics or system software or automotive software.
+
+12
+00:00:44,360 --> 00:00:46,390
+So, I started taking classes online,
+
+13
+00:00:46,390 --> 00:00:51,390
+at Udacity and at other places to learn how to become an autonomous vehicle engineer.
+
+14
+00:00:51,390 --> 00:00:55,440
+I was hired on to the autonomous vehicle team at Ford Motor Company at
+
+15
+00:00:55,440 --> 00:00:59,870
+their research and innovation center in Palo Alto, California.
+
+16
+00:00:59,870 --> 00:01:03,420
+Later, the team at Udacity asked me to come and build
+
+17
+00:01:03,420 --> 00:01:07,050
+out a program for people to do essentially what I had done.
+
+18
+00:01:07,050 --> 00:01:10,540
+To learn to become autonomous vehicle engineers.
+
+19
+00:01:10,960 --> 00:01:14,910
+At Udacity, we have our own self-driving car.
+
+20
+00:01:14,910 --> 00:01:16,985
+Her name is Carla.
+
+21
+00:01:16,985 --> 00:01:21,160
+I'd like to tell you a little bit about how Carla works,
+
+22
+00:01:21,160 --> 00:01:25,110
+and how most self-driving cars work through the lens of some of
+
+23
+00:01:25,110 --> 00:01:30,015
+the projects that our students have done as part of the Nanodegree program.
+
+24
+00:01:30,015 --> 00:01:37,579
+So, I think of self-driving cars as having five core components: computer vision,
+
+25
+00:01:37,579 --> 00:01:44,740
+sensor fusion, localization, path planning, and control.
+
+26
+00:01:44,740 --> 00:01:46,980
+Computer vision, is how we use
+
+27
+00:01:46,980 --> 00:01:51,315
+camera images to figure out what the world around us looks like.
+
+28
+00:01:51,315 --> 00:01:55,300
+Sensor fusion, is how we incorporate data from other sensors,
+
+29
+00:01:55,300 --> 00:01:57,265
+like lasers and radar,
+
+30
+00:01:57,265 --> 00:02:00,395
+to get a richer understanding of our environment.
+
+31
+00:02:00,395 --> 00:02:05,065
+Once we built this deep understanding of what the world around us is,
+
+32
+00:02:05,065 --> 00:02:09,970
+we use localization to figure out precisely where we are in that world.
+
+33
+00:02:09,970 --> 00:02:14,465
+Then, once we figured out where we are in the world and what the world looks like,
+
+34
+00:02:14,465 --> 00:02:16,340
+we use path planning,
+
+35
+00:02:16,340 --> 00:02:20,365
+to chart a course through the world to get us to where we'd like to go.
+
+36
+00:02:20,365 --> 00:02:22,935
+Then, the final step is control,
+
+37
+00:02:22,935 --> 00:02:26,720
+which is how we actually turn the steering wheel and hit the throttle and hit
+
+38
+00:02:26,720 --> 00:02:31,680
+the break in order to execute the trajectory that we built during path planning.
+
+39
+00:02:31,680 --> 00:02:35,590
+So, these are the five core components of self-driving cars,
+
+40
+00:02:35,590 --> 00:02:38,190
+and I'd like to investigate each of them with you.
+
+41
+00:02:38,190 --> 00:02:40,320
+This is computer vision,
+
+42
+00:02:40,320 --> 00:02:45,725
+this is a video that Carla took driving up Highway 280 in Silicon Valley.
+
+43
+00:02:45,725 --> 00:02:48,430
+This is work that one of our students, Vivekya Dab did.
+
+44
+00:02:48,430 --> 00:02:50,280
+Vivekya is using computer vision,
+
+45
+00:02:50,280 --> 00:02:54,940
+so looking for colors and edges and gradients to find the lane on the road.
+
+46
+00:02:54,940 --> 00:02:57,600
+Then, he's trained a deep neural network to
+
+47
+00:02:57,600 --> 00:03:00,735
+draw bounding boxes around the other vehicles on the road.
+
+48
+00:03:00,735 --> 00:03:02,790
+Deep neural networks or deep learning is
+
+49
+00:03:02,790 --> 00:03:05,950
+an exciting new part of machine learning and artificial intelligence,
+
+50
+00:03:05,950 --> 00:03:09,150
+and it's a way that computers can learn what cars and
+
+51
+00:03:09,150 --> 00:03:12,750
+other objects look like simply by sending them lots and lots of data.
+
+52
+00:03:12,750 --> 00:03:15,360
+They see lots of cars and they learn what cars look like.
+
+53
+00:03:15,360 --> 00:03:18,620
+You can see the deep neural network is trying to figure out is that one car?
+
+54
+00:03:18,620 --> 00:03:20,535
+Is that two cars? As they separate,
+
+55
+00:03:20,535 --> 00:03:22,670
+it sees that it's a couple of cars.
+
+56
+00:03:22,670 --> 00:03:28,730
+This is pretty similar to what advanced driver assistance systems do on the road today.
+
+57
+00:03:28,820 --> 00:03:33,670
+So, once we know what the world looks like through camera images,
+
+58
+00:03:33,670 --> 00:03:38,600
+the next step is to augment that understanding of the world using other sensors.
+
+59
+00:03:38,600 --> 00:03:41,290
+So, radar and lasers to get measurements
+
+60
+00:03:41,290 --> 00:03:44,270
+that are difficult for a camera alone to understand.
+
+61
+00:03:44,270 --> 00:03:47,040
+So, things like the distance between us and other cars and
+
+62
+00:03:47,040 --> 00:03:50,400
+how fast other objects in the environment are moving.
+
+63
+00:03:50,400 --> 00:03:52,065
+What you see here,
+
+64
+00:03:52,065 --> 00:03:55,980
+is data from a trip that Carla took up El Camino Real,
+
+65
+00:03:55,980 --> 00:03:59,035
+which is the main commercial street in Silicon Valley.
+
+66
+00:03:59,035 --> 00:04:00,630
+You see on the right,
+
+67
+00:04:00,630 --> 00:04:03,425
+the video feed of what that drive looks like.
+
+68
+00:04:03,425 --> 00:04:07,290
+The main image here is the laser scan of
+
+69
+00:04:07,290 --> 00:04:10,930
+what the world around Carla looks like and you can see this Lidar,
+
+70
+00:04:10,930 --> 00:04:12,495
+which is an array of lasers,
+
+71
+00:04:12,495 --> 00:04:15,340
+doing a 360-degree scan of the world,
+
+72
+00:04:15,340 --> 00:04:20,140
+and seeing what the different objects in that environment look like and how they move.
+
+73
+00:04:20,660 --> 00:04:26,770
+So, once we understand both what the world looks like and how to measure it,
+
+74
+00:04:26,770 --> 00:04:29,170
+and we incorporate those understandings together to get
+
+75
+00:04:29,170 --> 00:04:32,570
+a rich picture of our surrounding environment,
+
+76
+00:04:32,570 --> 00:04:36,140
+the next step is to localize ourselves in that environment.
+
+77
+00:04:36,140 --> 00:04:39,460
+You might think this is really straightforward because we all have cell phones today,
+
+78
+00:04:39,460 --> 00:04:40,940
+they all have GPS in them.
+
+79
+00:04:40,940 --> 00:04:44,160
+We all know where we are all of the time, but in fact,
+
+80
+00:04:44,160 --> 00:04:47,790
+GPS is only accurate to within about one to two meters.
+
+81
+00:04:47,790 --> 00:04:50,940
+If you think about how big one to two meters is.
+
+82
+00:04:50,940 --> 00:04:54,850
+If a car is wrong about where it is by one to two meters,
+
+83
+00:04:54,850 --> 00:04:57,910
+it could be over here on the sidewalk hitting things.
+
+84
+00:04:57,910 --> 00:04:59,720
+That would be really bad.
+
+85
+00:04:59,720 --> 00:05:02,870
+So, we have to use much more sophisticated mathematical algorithms
+
+86
+00:05:02,870 --> 00:05:04,490
+as well as high-definition maps
+
+87
+00:05:04,490 --> 00:05:06,800
+to localize our vehicle precisely in
+
+88
+00:05:06,800 --> 00:05:10,710
+its environment to single digit centimeter level accuracy.
+
+89
+00:05:10,710 --> 00:05:13,300
+So, this is work by one of our students,
+
+90
+00:05:13,300 --> 00:05:15,090
+his name is Daniel Lopez Madrid.
+
+91
+00:05:15,090 --> 00:05:18,950
+What Daniel is doing is he is using a particle filter,
+
+92
+00:05:18,950 --> 00:05:22,680
+which is a really sophisticated type of triangulation.
+
+93
+00:05:22,680 --> 00:05:25,030
+As his blue vehicle moves through the simulator,
+
+94
+00:05:25,030 --> 00:05:27,650
+it's measuring its distance from various landmarks.
+
+95
+00:05:27,650 --> 00:05:32,170
+It's figuring out how far it is from these landmarks and where it sees the landmarks and
+
+96
+00:05:32,170 --> 00:05:34,360
+comparing that to the map and using that to
+
+97
+00:05:34,360 --> 00:05:36,840
+figure out precisely where it is in the world.
+
+98
+00:05:36,840 --> 00:05:38,970
+This is how self-driving cars localize.
+
+99
+00:05:38,970 --> 00:05:42,805
+In the real-world, those landmarks might be things like street lights,
+
+100
+00:05:42,805 --> 00:05:45,740
+or traffic signs, or mailboxes,
+
+101
+00:05:45,740 --> 00:05:48,050
+or even manhole covers.
+
+102
+00:05:48,600 --> 00:05:51,880
+So, once we figured out where we are in
+
+103
+00:05:51,880 --> 00:05:54,690
+the world and what the world around us looks like,
+
+104
+00:05:54,690 --> 00:05:57,490
+the next step is to actually chart a path through
+
+105
+00:05:57,490 --> 00:06:00,410
+that world to figure out how to get where we want to go,
+
+106
+00:06:00,410 --> 00:06:02,360
+and this is path planning.
+
+107
+00:06:02,360 --> 00:06:06,395
+Here, you can see the work by one of our students, Kazihiro Nakagawa.
+
+108
+00:06:06,395 --> 00:06:10,525
+What Kazihiro has done is in our Udacity highway simulator,
+
+109
+00:06:10,525 --> 00:06:12,060
+he's built a path planner,
+
+110
+00:06:12,060 --> 00:06:15,790
+that predicts where the other vehicles on the road are going to go,
+
+111
+00:06:15,790 --> 00:06:19,540
+and then figures out what maneuver his vehicle should take in response.
+
+112
+00:06:19,540 --> 00:06:22,720
+Then, finally, builds a series of waypoints,
+
+113
+00:06:22,720 --> 00:06:26,360
+those are those green pearls you see in the video for the car to drive through.
+
+114
+00:06:26,360 --> 00:06:28,610
+That's the trajectory the car should follow.
+
+115
+00:06:28,610 --> 00:06:31,170
+You see when his vehicle comes up on other traffic,
+
+116
+00:06:31,170 --> 00:06:34,310
+it has to figure out should it slow down and stay in its lane,
+
+117
+00:06:34,310 --> 00:06:36,840
+or should it shift right or shift left.
+
+118
+00:06:36,840 --> 00:06:38,960
+This is, in fact, the type of decision that
+
+119
+00:06:38,960 --> 00:06:42,210
+real self-driving cars have to make all the time subject to constraints,
+
+120
+00:06:42,210 --> 00:06:44,470
+like speed limits, and acceleration limits,
+
+121
+00:06:44,470 --> 00:06:45,830
+so the ride is comfortable.
+
+122
+00:06:45,830 --> 00:06:49,080
+You can imagine, this gets much more complicated in urban driving where there
+
+123
+00:06:49,080 --> 00:06:52,980
+are a lot more intersections and different maneuvers you can make,
+
+124
+00:06:52,980 --> 00:06:56,000
+but in principle the decisions are all the same.
+
+125
+00:06:56,000 --> 00:07:01,550
+So, once we've figured out what the path we want to take through this world is,
+
+126
+00:07:01,550 --> 00:07:03,000
+and we know where we are in the world,
+
+127
+00:07:03,000 --> 00:07:04,610
+and we know what the world looks like.
+
+128
+00:07:04,610 --> 00:07:08,015
+The final step in the pipeline is control.
+
+129
+00:07:08,015 --> 00:07:12,840
+Control is how we actually turn the steering wheel and hit the throttle and
+
+130
+00:07:12,840 --> 00:07:18,180
+hit the break in order to execute that trajectory that we built during path planning.
+
+131
+00:07:18,180 --> 00:07:21,770
+So, this is one of our students, Emi Lao.
+
+132
+00:07:21,770 --> 00:07:24,119
+This is Udacity's racetrack simulator,
+
+133
+00:07:24,119 --> 00:07:25,750
+and she has a yellow line here,
+
+134
+00:07:25,750 --> 00:07:28,870
+that's the ideal trajectory that her car should follow.
+
+135
+00:07:28,870 --> 00:07:32,440
+What you see is there's this green line layered on top of the yellow line.
+
+136
+00:07:32,440 --> 00:07:35,890
+The green line is the trajectory that her vehicle predicts it's going to
+
+137
+00:07:35,890 --> 00:07:40,275
+follow based on the steering wheel and throttle and break commands that it's sending.
+
+138
+00:07:40,275 --> 00:07:45,560
+What we'd love is for that green line to be 100 percent aligned with the yellow line,
+
+139
+00:07:45,560 --> 00:07:46,975
+but of course that's really difficult.
+
+140
+00:07:46,975 --> 00:07:49,200
+As a human driver, you probably know this.
+
+141
+00:07:49,200 --> 00:07:51,740
+It's really difficult particularly on tight turns to
+
+142
+00:07:51,740 --> 00:07:55,615
+follow the exact line through the middle of the lane that you'd like to follow.
+
+143
+00:07:55,615 --> 00:07:57,240
+But, you do pretty well with it,
+
+144
+00:07:57,240 --> 00:08:00,425
+you manage to drive, and in fact computers are really, really good at this.
+
+145
+00:08:00,425 --> 00:08:03,380
+The distance between the trajectory they'd like to follow and
+
+146
+00:08:03,380 --> 00:08:07,210
+the trajectory they actually follow is really, really close.
+
+147
+00:08:07,210 --> 00:08:11,405
+So, that's how self-driving cars work at a high level.
+
+148
+00:08:11,405 --> 00:08:14,510
+We use computer vision and sensor fusion to
+
+149
+00:08:14,510 --> 00:08:17,980
+get this rich picture of where we are in the world.
+
+150
+00:08:17,980 --> 00:08:23,870
+We use localization, to nail down precisely our location in that rich world.
+
+151
+00:08:23,870 --> 00:08:25,705
+We use path planning,
+
+152
+00:08:25,705 --> 00:08:29,670
+to chart the course through the world to get us where we'd like to go.
+
+153
+00:08:29,670 --> 00:08:33,440
+We use control, to turn the steering wheel and hit the throttle and
+
+154
+00:08:33,440 --> 00:08:37,400
+hit the break to execute that trajectory and ultimately move the vehicle.
+
+155
+00:08:37,400 --> 00:08:40,220
+Everything else self-driving cars do are essentially
+
+156
+00:08:40,220 --> 00:08:43,760
+more sophisticated implementations of these key functions,
+
+157
+00:08:43,760 --> 00:08:45,845
+and this is how self-driving cars work.
+
+158
+00:08:45,845 --> 00:08:49,175
+It is a really exciting time to work on self-driving cars.
+
+159
+00:08:49,175 --> 00:08:52,610
+Computers are getting better and better at these tasks all of the time,
+
+160
+00:08:52,610 --> 00:08:55,595
+and I hope you see self-driving cars on a road near you soon.
+
+161
+00:08:55,595 --> 00:08:57,130
+My name is David Silver,
+
+162
+00:08:57,130 --> 00:09:01,180
+I teach self-driving cars at Udacity. Thank you very much.
+

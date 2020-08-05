@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:07,049
+Congratulations, you've seen the Apollo framework and how it powers self-driving cars.
+
+2
+00:00:07,049 --> 00:00:09,094
+Throughout the rest of this course,
+
+3
+00:00:09,095 --> 00:00:12,030
+Baidu's Apollo team will be joining me to teach
+
+4
+00:00:12,029 --> 00:00:15,480
+the key components of self-driving cars and Apollo.
+
+5
+00:00:15,480 --> 00:00:18,339
+I hope you're excited to get started.
+

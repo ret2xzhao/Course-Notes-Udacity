@@ -1,0 +1,196 @@
+1
+00:00:00,720 --> 00:00:03,680
+The engineers from the Apollo team, and I,
+
+2
+00:00:04,040 --> 00:00:08,920
+will teach you the main sections of the Apollo open-source self-driving car platform, 
+
+3
+00:00:09,220 --> 00:00:11,140
+including high-definition maps,
+
+4
+00:00:11,440 --> 00:00:13,660
+localization, perception
+
+5
+00:00:13,940 --> 00:00:16,720
+prediction, planning, and control.
+
+6
+00:00:17,760 --> 00:00:19,740
+In the high-definition maps lesson,
+
+7
+00:00:19,940 --> 00:00:23,480
+we’ll introduce you to a central module of self-driving cars,
+
+8
+00:00:23,720 --> 00:00:25,880
+especially Apollo self-driving cars,
+
+9
+00:00:26,240 --> 00:00:27,540
+the high-definition map.
+
+10
+00:00:28,460 --> 00:00:32,820
+High-definition maps underpin almost every other part of the software stack,
+
+11
+00:00:33,240 --> 00:00:35,220
+including localization, perception, 
+
+12
+00:00:35,220 --> 00:00:36,660
+prediction, and planning.
+
+13
+00:00:37,220 --> 00:00:38,860
+In the localization lesson,
+
+14
+00:00:39,160 --> 00:00:42,820
+we’ll discuss how the car determines its location in the world. 
+
+15
+00:00:43,360 --> 00:00:44,900
+This is harder than it sounds!
+
+16
+00:00:45,460 --> 00:00:48,060
+The car utilizes laser and radar data,
+
+17
+00:00:48,260 --> 00:00:52,420
+and compares what it sees through these sensors to a high-definition map.
+
+18
+00:00:53,240 --> 00:00:56,420
+This comparison enables the vehicle to localize itself 
+
+19
+00:00:56,640 --> 00:00:59,080
+with single-digit-centimeter-level accuracy.
+
+20
+00:01:00,200 --> 00:01:01,720
+In the perception lesson, 
+
+21
+00:01:01,880 --> 00:01:04,760
+we’ll look at how a self-driving car sees the world. 
+
+22
+00:01:05,380 --> 00:01:08,740
+Deep learning is an important and powerful tool for perception.
+
+23
+00:01:09,440 --> 00:01:11,100
+Convolutional neural networks,
+
+24
+00:01:11,260 --> 00:01:13,180
+which make up a branch of deep learning,
+
+25
+00:01:13,360 --> 00:01:15,380
+are critical to perception tasks,
+
+26
+00:01:15,640 --> 00:01:19,080
+such as classification, detection, and segmentation. 
+
+27
+00:01:19,980 --> 00:01:24,080
+These approaches work with data from several different self-driving car sensors, 
+
+28
+00:01:24,220 --> 00:01:27,180
+including cameras, radar, and lidar.
+
+29
+00:01:28,200 --> 00:01:29,600
+Next is prediction.
+
+30
+00:01:30,100 --> 00:01:32,040
+We’ll outline different ways to predict 
+
+31
+00:01:32,040 --> 00:01:34,640
+how other vehicles or pedestrians might move.
+
+32
+00:01:35,320 --> 00:01:38,340
+One approach, called a recurrent neural network, 
+
+33
+00:01:38,680 --> 00:01:41,340
+tracks other objects’ movements over time 
+
+34
+00:01:41,560 --> 00:01:44,800
+and uses this time-series data to predict the future.
+
+35
+00:01:45,840 --> 00:01:49,820
+The planning lesson will cover how to combine prediction and routing
+
+36
+00:01:50,100 --> 00:01:52,360
+to generate a trajectory for our vehicle.
+
+37
+00:01:53,180 --> 00:01:56,500
+Planning is one of the hardest parts of building a self-driving car 
+
+38
+00:01:56,760 --> 00:02:01,140
+and we are excited to share with you several different approaches Apollo uses
+
+39
+00:02:01,360 --> 00:02:03,600
+to develop trajectories for autonomous vehicles.
+
+40
+00:02:05,060 --> 00:02:08,240
+The control lesson shows how to use steering,
+
+41
+00:02:08,600 --> 00:02:11,880
+throttle, and brake to execute our planned trajectory.
+
+42
+00:02:12,760 --> 00:02:15,380
+We’ll explain several different types of controllers,
+
+43
+00:02:15,600 --> 00:02:19,000
+which range from simple to increasingly complex 
+
+44
+00:02:19,000 --> 00:02:21,240
+but also increasingly powerful. 
+
+45
+00:02:22,100 --> 00:02:24,260
+We hope that once you’ve completed this class, 
+
+46
+00:02:24,260 --> 00:02:26,980
+you’ll understand how self-driving cars work.
+
+47
+00:02:27,640 --> 00:02:31,140
+These vehicles are amazing and so much fun to work on!
+
+48
+00:02:31,960 --> 00:02:35,180
+I hope you’re as excited to begin this journey as I was, 
+
+49
+00:02:35,420 --> 00:02:38,060
+when I first started to learn about self-driving cars.
+

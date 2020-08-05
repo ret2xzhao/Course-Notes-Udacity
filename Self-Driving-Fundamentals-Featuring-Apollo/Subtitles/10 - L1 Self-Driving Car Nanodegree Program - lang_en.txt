@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:03,419
+If you're excited to learn about self-driving cars,
+
+2
+00:00:03,419 --> 00:00:05,189
+after this free course,
+
+3
+00:00:05,189 --> 00:00:07,200
+you should join Udacity's Intro to
+
+4
+00:00:07,200 --> 00:00:09,870
+Self-driving Cars nanodegree program or
+
+5
+00:00:09,869 --> 00:00:14,074
+the more advanced Self-driving Car Engineer nanodegree program.
+
+6
+00:00:14,074 --> 00:00:17,349
+These programs include courses and projects that
+
+7
+00:00:17,350 --> 00:00:20,380
+will give you hands-on experience with deep learning,
+
+8
+00:00:20,379 --> 00:00:25,780
+computer vision, sensors, motion and even a real self-driving car.
+
+9
+00:00:25,780 --> 00:00:30,664
+One of the best parts is that Sebastian Thrun, the father of the self-driving car,
+
+10
+00:00:30,664 --> 00:00:33,850
+leads these nanodegree programs with me.
+
+11
+00:00:33,850 --> 00:00:36,475
+Sebastian is the co-founder of Udacity and
+
+12
+00:00:36,475 --> 00:00:39,429
+a rock star in the world of autonomous vehicles.
+
+13
+00:00:39,429 --> 00:00:44,710
+Before Udacity, Sebastian launched the Google self-driving car project and before
+
+14
+00:00:44,710 --> 00:00:47,350
+that he led the Stanford University team that
+
+15
+00:00:47,350 --> 00:00:50,770
+won the DARPA Grand Challenge self-driving car race.
+
+16
+00:00:50,770 --> 00:00:55,150
+Our goal with the Intro to Self-driving Cars nanodegree program and
+
+17
+00:00:55,149 --> 00:00:58,329
+the Self-driving Car Engineer nanodegree program is to
+
+18
+00:00:58,329 --> 00:01:02,274
+prepare you for a job working on self-driving cars.
+
+19
+00:01:02,274 --> 00:01:05,200
+You'll learn skills and techniques from
+
+20
+00:01:05,200 --> 00:01:09,070
+the most advanced autonomous vehicle companies in the world.
+
+21
+00:01:09,069 --> 00:01:12,439
+Thousands of students have already enrolled in the program,
+
+22
+00:01:12,439 --> 00:01:18,079
+so join today to become a self-driving car engineer with Udacity.
+

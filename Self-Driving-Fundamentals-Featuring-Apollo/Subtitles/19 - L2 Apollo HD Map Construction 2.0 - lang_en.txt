@@ -1,0 +1,176 @@
+1
+00:00:00,000 --> 00:00:07,419
+The construction of high definition maps is composed of five processes: data sourcing,
+
+2
+00:00:07,419 --> 00:00:10,210
+data processing, object detection,
+
+3
+00:00:10,210 --> 00:00:13,815
+manual verification, and map publication.
+
+4
+00:00:13,814 --> 00:00:17,324
+Data sourcing is a massively intensive endeavor.
+
+5
+00:00:17,324 --> 00:00:22,390
+Nearly 300 Apollo survey vehicles collect source data for map production.
+
+6
+00:00:22,390 --> 00:00:25,710
+Survey vehicles not only help construct the maps,
+
+7
+00:00:25,710 --> 00:00:29,234
+they are also critical for maintaining and updating maps.
+
+8
+00:00:29,234 --> 00:00:31,699
+Roads change constantly.
+
+9
+00:00:31,699 --> 00:00:33,969
+There is always construction,
+
+10
+00:00:33,969 --> 00:00:38,289
+and there are always utility crews tearing up the road and repaving it.
+
+11
+00:00:38,289 --> 00:00:40,250
+The self-driving car, however,
+
+12
+00:00:40,250 --> 00:00:43,549
+needs its maps to always be up to date.
+
+13
+00:00:43,549 --> 00:00:48,224
+A huge number of survey vehicles ensures that every time the road changes,
+
+14
+00:00:48,225 --> 00:00:50,365
+the map gets updated quickly.
+
+15
+00:00:50,365 --> 00:00:54,645
+Survey vehicles use many different sensors such as GPS,
+
+16
+00:00:54,645 --> 00:00:58,365
+inertial measurement units, LiDAR, and camera.
+
+17
+00:00:58,365 --> 00:01:00,829
+Apollo defines a hardware framework that
+
+18
+00:01:00,829 --> 00:01:04,325
+integrates these sensors into a single autonomous system.
+
+19
+00:01:04,325 --> 00:01:07,799
+By supporting so many different types of sensors,
+
+20
+00:01:07,799 --> 00:01:10,599
+Apollo can collect different types of data,
+
+21
+00:01:10,599 --> 00:01:12,250
+fuse that data together,
+
+22
+00:01:12,250 --> 00:01:16,090
+and ultimately, produce high definition maps.
+
+23
+00:01:16,099 --> 00:01:21,134
+Data processing is how Apollo sorts, classifies,
+
+24
+00:01:21,135 --> 00:01:23,520
+and cleans the collected data to get
+
+25
+00:01:23,519 --> 00:01:28,265
+an initial map template without any semantic information or annotation.
+
+26
+00:01:28,265 --> 00:01:31,484
+For example, this image is a point cloud
+
+27
+00:01:31,484 --> 00:01:35,444
+fused from data collected in Zhongguancun, Beijing.
+
+28
+00:01:35,444 --> 00:01:38,984
+For object detection, the Apollo team applies
+
+29
+00:01:38,984 --> 00:01:43,640
+artificial intelligence to detect and classify the static objects,
+
+30
+00:01:43,640 --> 00:01:48,254
+including lane lines, traffic signs, and even poles.
+
+31
+00:01:48,254 --> 00:01:50,819
+Manual verification ensures that
+
+32
+00:01:50,819 --> 00:01:56,449
+the automated map creation process has run correctly and identifies any problems.
+
+33
+00:01:56,450 --> 00:02:02,609
+Apollo software makes tagging and editing the map efficient for manual verification.
+
+34
+00:02:02,609 --> 00:02:07,209
+After data sourcing, data processing, object detection,
+
+35
+00:02:07,209 --> 00:02:11,435
+and manual verification, the map is ready for publication.
+
+36
+00:02:11,435 --> 00:02:14,789
+In addition to releasing high definition maps,
+
+37
+00:02:14,789 --> 00:02:18,389
+Apollo also publishes corresponding localization maps with
+
+38
+00:02:18,389 --> 00:02:22,734
+a top-down view and three-dimensional point cloud maps.
+
+39
+00:02:22,735 --> 00:02:28,820
+In the process of constructing and updating maps, Apollo uses crowdsourcing.
+
+40
+00:02:28,819 --> 00:02:33,039
+Crowdsourcing means that Apollo releases its data sourcing tools to
+
+41
+00:02:33,039 --> 00:02:38,750
+the public so that anyone can participate in the task of producing high definition maps.
+
+42
+00:02:38,750 --> 00:02:42,849
+Apollo HD map crowdsourcing is possible through smartphones,
+
+43
+00:02:42,849 --> 00:02:47,129
+smart infotainment systems, and even other self-driving cars.
+
+44
+00:02:47,129 --> 00:02:52,569
+Crowdsourcing accelerates the production and maintenance of HD maps.
+

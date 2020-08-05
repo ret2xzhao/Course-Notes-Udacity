@@ -1,0 +1,148 @@
+1
+00:00:00,000 --> 00:00:06,365
+Hi. Let's take a look at the reference vehicle and the reference hardware platform.
+
+2
+00:00:06,365 --> 00:00:09,375
+If you want to build a self-driving car,
+
+3
+00:00:09,375 --> 00:00:13,455
+we start with a base vehicle that can be controlled electronically,
+
+4
+00:00:13,455 --> 00:00:18,410
+not just by the physical steering wheel and throttle, and brake pedal.
+
+5
+00:00:18,410 --> 00:00:23,259
+This type of vehicle has special name, a drive-by-wire vehicle.
+
+6
+00:00:23,260 --> 00:00:27,625
+Behind me, you can see a real Apollo self-driving car.
+
+7
+00:00:27,625 --> 00:00:30,809
+The car has several different sensors which
+
+8
+00:00:30,809 --> 00:00:34,689
+are defined by the hardware reference specification.
+
+9
+00:00:34,689 --> 00:00:38,549
+The Controller Area Network or CAN,
+
+10
+00:00:38,549 --> 00:00:42,464
+is the vehicle's internal communication network.
+
+11
+00:00:42,465 --> 00:00:49,190
+The CAN card, is how your computer system connects to the car internal network,
+
+12
+00:00:49,189 --> 00:00:56,059
+to send signals for acceleration, braking and steering.
+
+13
+00:00:56,060 --> 00:01:00,270
+The global positioning system or GPS
+
+14
+00:01:00,270 --> 00:01:04,725
+receives signals from satellites, circling the earth.
+
+15
+00:01:04,724 --> 00:01:08,574
+The signals help us to determine our location.
+
+16
+00:01:08,575 --> 00:01:11,960
+The inertial measurement unit or IMU,
+
+17
+00:01:11,959 --> 00:01:15,263
+measures the vehicles movement and location,
+
+18
+00:01:15,263 --> 00:01:17,024
+by tracking the position,
+
+19
+00:01:17,025 --> 00:01:21,285
+speed, acceleration and other factors.
+
+20
+00:01:21,284 --> 00:01:24,783
+LiDAR is an array of pulse lasers,
+
+21
+00:01:24,784 --> 00:01:30,020
+the LiDAR that Apollo uses can scan 360 degrees around the vehicle.
+
+22
+00:01:30,019 --> 00:01:32,474
+The reflection of this laser beams,
+
+23
+00:01:32,474 --> 00:01:37,754
+builds the point cloud that our software can use to understand the environment.
+
+24
+00:01:37,754 --> 00:01:40,920
+Camera captures the image data.
+
+25
+00:01:40,920 --> 00:01:44,670
+We can use computer vision to extract the contents of
+
+26
+00:01:44,670 --> 00:01:48,784
+these images and understand the environment around us.
+
+27
+00:01:48,784 --> 00:01:53,289
+For example, because cameras can perceive color,
+
+28
+00:01:53,290 --> 00:01:57,685
+we use them to detect and understand traffic lights.
+
+29
+00:01:57,685 --> 00:02:01,629
+Radar is also used for detecting obstacles.
+
+30
+00:02:01,629 --> 00:02:03,319
+Radar has low resolution,
+
+31
+00:02:03,319 --> 00:02:09,844
+which makes it difficult to understand what kind of obstacle that radar has detected.
+
+32
+00:02:09,844 --> 00:02:12,125
+But the advantages of radar,
+
+33
+00:02:12,125 --> 00:02:17,534
+are that it is economical and it works in all weather, and lighting condition.
+
+34
+00:02:17,534 --> 00:02:23,215
+Radar is also particularly very good at measuring the speed of other vehicles.
+
+35
+00:02:23,215 --> 00:02:28,705
+Here is an example of how the major hardware components including camera,
+
+36
+00:02:28,705 --> 00:02:33,990
+radar, LiDAR, GPS-IMU and IPC could be installed on a vehicle.
+
+37
+00:02:33,990 --> 00:02:38,200
+This hardware is what you need to run Apollo.
+
