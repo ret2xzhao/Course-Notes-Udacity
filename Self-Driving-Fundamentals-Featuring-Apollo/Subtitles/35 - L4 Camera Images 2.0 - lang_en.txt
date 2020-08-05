@@ -1,0 +1,144 @@
+1
+00:00:00,000 --> 00:00:04,950
+Camera images are the most common data for computer vision.
+
+2
+00:00:04,950 --> 00:00:07,380
+Take this image of a car.
+
+3
+00:00:07,379 --> 00:00:13,240
+Let's look at how the computer understands that this is in fact an image of a car.
+
+4
+00:00:13,240 --> 00:00:15,695
+When I showed you this image,
+
+5
+00:00:15,695 --> 00:00:17,385
+you might say, "Oh,
+
+6
+00:00:17,385 --> 00:00:19,705
+there's a car in the image," which is true,
+
+7
+00:00:19,704 --> 00:00:22,649
+but from the computer's perspective,
+
+8
+00:00:22,649 --> 00:00:25,265
+the image is just a two-dimensional grid,
+
+9
+00:00:25,265 --> 00:00:27,380
+also known as a matrix.
+
+10
+00:00:27,379 --> 00:00:30,838
+Each cell in a matrix contains a value.
+
+11
+00:00:30,838 --> 00:00:34,104
+Digital images are all comprised to pixels,
+
+12
+00:00:34,104 --> 00:00:38,684
+which contain very small units of color or intensity.
+
+13
+00:00:38,685 --> 00:00:42,890
+Every pixel in an image is just a numerical value.
+
+14
+00:00:42,890 --> 00:00:46,969
+These values are what comprise our image matrix.
+
+15
+00:00:46,969 --> 00:00:49,814
+We can even change these pixel values.
+
+16
+00:00:49,814 --> 00:00:55,289
+We could add a scalar integer to every single pixel value to change how bright the images
+
+17
+00:00:55,289 --> 00:00:57,659
+or we could shift each pixel value to
+
+18
+00:00:57,659 --> 00:01:01,799
+the right or there are many other operations we could perform.
+
+19
+00:01:01,799 --> 00:01:08,189
+In general, these grids of numbers are the basis for many image processing techniques.
+
+20
+00:01:08,189 --> 00:01:12,329
+Most color and shape transformations are done by just
+
+21
+00:01:12,329 --> 00:01:17,370
+mathematically operating on an image and changing it pixel by pixel.
+
+22
+00:01:17,370 --> 00:01:21,150
+Now you've seen an example of an image broken down
+
+23
+00:01:21,150 --> 00:01:25,135
+into a two-dimensional grid of grayscale pixel values.
+
+24
+00:01:25,135 --> 00:01:29,365
+Color images are similar but a little more complex.
+
+25
+00:01:29,364 --> 00:01:34,140
+Color images are constructed as three-dimensional cubes of values.
+
+26
+00:01:34,140 --> 00:01:37,965
+Each cube has a height, width and depth.
+
+27
+00:01:37,965 --> 00:01:41,734
+The depth is the number of color channels.
+
+28
+00:01:41,734 --> 00:01:44,750
+Most color images can be represented as
+
+29
+00:01:44,750 --> 00:01:49,165
+combinations of three colors: red, green and blue.
+
+30
+00:01:49,165 --> 00:01:52,495
+These are known as RGB images.
+
+31
+00:01:52,495 --> 00:01:56,400
+For RGB images, the depth is three.
+
+32
+00:01:56,400 --> 00:02:01,320
+Thus an RGB image can be represented by a thin box.
+
+33
+00:02:01,319 --> 00:02:07,019
+It's helpful to think of the depth as three stacked two-dimensional color layers.
+
+34
+00:02:07,019 --> 00:02:08,775
+One layer is red,
+
+35
+00:02:08,775 --> 00:02:11,490
+one is green and one is blue.
+
+36
+00:02:11,490 --> 00:02:16,110
+Altogether, they create a complete color image.
+

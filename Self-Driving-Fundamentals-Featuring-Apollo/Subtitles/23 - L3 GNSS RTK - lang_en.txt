@@ -1,0 +1,108 @@
+1
+00:00:00,000 --> 00:00:03,875
+What would you do if you got lost in a field?
+
+2
+00:00:03,875 --> 00:00:07,950
+Suppose that you see you are 75 meters from a tree,
+
+3
+00:00:07,950 --> 00:00:10,000
+where are you likely to be?
+
+4
+00:00:10,000 --> 00:00:15,960
+Well, now you know more about where you might be than you did just a moment ago,
+
+5
+00:00:15,960 --> 00:00:18,495
+but you still don't know exactly where you are.
+
+6
+00:00:18,495 --> 00:00:23,595
+You just know that your position is somewhere 75 meters from that tree.
+
+7
+00:00:23,595 --> 00:00:27,270
+More formally your position is on a circle
+
+8
+00:00:27,270 --> 00:00:31,195
+with the tree at the center and a radius of 75 meters.
+
+9
+00:00:31,195 --> 00:00:36,520
+Now, you also see a house that is 64 meters away from you.
+
+10
+00:00:36,520 --> 00:00:38,895
+Do you know where you are now?
+
+11
+00:00:38,895 --> 00:00:42,130
+Believe it or not, you probably don't.
+
+12
+00:00:42,130 --> 00:00:46,980
+Your location is somewhere at the intersection of two circles but there
+
+13
+00:00:46,980 --> 00:00:49,200
+could be two points of intersection and
+
+14
+00:00:49,200 --> 00:00:52,275
+you don't know which one of those points you're at.
+
+15
+00:00:52,275 --> 00:00:55,565
+Now imagine you see a third landmark,
+
+16
+00:00:55,565 --> 00:01:01,470
+a street light and you measure your position as 55 meters from that street light.
+
+17
+00:01:01,470 --> 00:01:05,910
+Finally, you now know exactly where you are relative to
+
+18
+00:01:05,910 --> 00:01:08,850
+those landmarks and if you have a map
+
+19
+00:01:08,850 --> 00:01:12,080
+that tells you where those landmarks exist in the world,
+
+20
+00:01:12,080 --> 00:01:16,020
+then you know exactly where you are in the world too.
+
+21
+00:01:16,020 --> 00:01:18,980
+This process is called triangulation.
+
+22
+00:01:18,980 --> 00:01:22,795
+In the example we just walked through was in two dimensions.
+
+23
+00:01:22,795 --> 00:01:26,760
+Imagine we're trying to localize in three dimensions on the surface of
+
+24
+00:01:26,760 --> 00:01:30,760
+the earth and instead of a landmarks that we can see,
+
+25
+00:01:30,760 --> 00:01:35,340
+we'll use satellites that are broadcasting their distance to us from space.
+
+26
+00:01:35,340 --> 00:01:37,760
+This is how GPS works.
+
+27
+00:01:37,760 --> 00:01:43,110
+How many satellites do we need to know exactly where we are on the Earth?
+

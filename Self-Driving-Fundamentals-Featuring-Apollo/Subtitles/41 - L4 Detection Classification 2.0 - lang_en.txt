@@ -1,0 +1,128 @@
+1
+00:00:00,000 --> 00:00:03,540
+Among perception tasks, the
+
+2
+00:00:03,540 --> 00:00:07,645
+first that comes to mind is obstacle detection and classification.
+
+3
+00:00:07,644 --> 00:00:10,884
+Driving presents many different objects.
+
+4
+00:00:10,884 --> 00:00:13,419
+Static objects include walls,
+
+5
+00:00:13,419 --> 00:00:16,394
+trees, poles, and even buildings.
+
+6
+00:00:16,394 --> 00:00:18,980
+Dynamic objects include pedestrians,
+
+7
+00:00:18,980 --> 00:00:21,649
+bicycles, and various types of cars.
+
+8
+00:00:21,649 --> 00:00:25,449
+The computer first needs to know where these objects are located,
+
+9
+00:00:25,449 --> 00:00:27,254
+and then, classify them.
+
+10
+00:00:27,254 --> 00:00:32,134
+A self-driving car driving down the road might detect many different objects.
+
+11
+00:00:32,134 --> 00:00:35,799
+The car's decisions about its path and speed depend
+
+12
+00:00:35,799 --> 00:00:38,544
+on what types of objects it perceives.
+
+13
+00:00:38,545 --> 00:00:41,320
+If the car perceives a bicycle ahead of it,
+
+14
+00:00:41,320 --> 00:00:46,399
+the car may decide to slow down and change lanes in order to safely pass the bicycle.
+
+15
+00:00:46,399 --> 00:00:50,244
+However, if the car perceives another vehicle ahead,
+
+16
+00:00:50,244 --> 00:00:53,579
+then the self-driving car might maintain its speed and lane,
+
+17
+00:00:53,579 --> 00:00:58,494
+predicting that the vehicle ahead will also maintain that same speed and lane.
+
+18
+00:00:58,494 --> 00:01:03,004
+Another example is traffic light classification and detection.
+
+19
+00:01:03,005 --> 00:01:08,674
+First, we'll use computer vision to localize the traffic light within an image.
+
+20
+00:01:08,674 --> 00:01:14,224
+Then, we can classify the traffic light based on the color of light that it displays.
+
+21
+00:01:14,224 --> 00:01:16,259
+What algorithms do we use for
+
+22
+00:01:16,260 --> 00:01:19,829
+obstacle detection and classification in autonomous vehicles?
+
+23
+00:01:19,829 --> 00:01:26,234
+First, we use a detection CNN to find the location of objects within the image.
+
+24
+00:01:26,234 --> 00:01:29,579
+After localizing the object within the image,
+
+25
+00:01:29,579 --> 00:01:33,844
+we can send the image to another CNN for classification,
+
+26
+00:01:33,844 --> 00:01:40,995
+or we could do detection and classification using a single CNN architecture.
+
+27
+00:01:40,995 --> 00:01:43,290
+A common practice is to append
+
+28
+00:01:43,290 --> 00:01:48,105
+several different heads to the end of a single network architecture.
+
+29
+00:01:48,105 --> 00:01:50,910
+One head might perform detection,
+
+30
+00:01:50,909 --> 00:01:53,670
+and another might perform classification.
+
+31
+00:01:53,670 --> 00:02:01,530
+A classic architecture is R-CNN and its variants: Fast R-CNN and Faster R-CNN.
+
+32
+00:02:01,530 --> 00:02:06,890
+YOLO and SSD are different architectures with similar forms.
+

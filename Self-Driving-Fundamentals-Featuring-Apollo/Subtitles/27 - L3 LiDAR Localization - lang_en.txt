@@ -1,0 +1,236 @@
+1
+00:00:00,000 --> 00:00:05,144
+With LIDAR, we can localize a car by means of point cloud matching.
+
+2
+00:00:05,144 --> 00:00:08,640
+This method continuously matches the detected data from
+
+3
+00:00:08,640 --> 00:00:12,665
+the LIDAR sensors with the preexisting high-definition map.
+
+4
+00:00:12,664 --> 00:00:15,479
+This comparison yields the global position
+
+5
+00:00:15,480 --> 00:00:18,910
+and heading of the car on the high-definition map.
+
+6
+00:00:18,910 --> 00:00:22,704
+There are many algorithms to use for matching point clouds.
+
+7
+00:00:22,704 --> 00:00:27,199
+Iterative closest point or ICP is one approach.
+
+8
+00:00:27,199 --> 00:00:30,910
+Suppose we want to match two cloud scans.
+
+9
+00:00:30,910 --> 00:00:33,594
+For each point in one scan,
+
+10
+00:00:33,594 --> 00:00:37,670
+we need to find the closest matching point in the other scan.
+
+11
+00:00:37,670 --> 00:00:41,984
+Eventually, we'll have gathered many matching point pairs.
+
+12
+00:00:41,984 --> 00:00:45,130
+We sum the distance error between each pair of
+
+13
+00:00:45,130 --> 00:00:50,335
+points and then calculate the average distance error over the entire set.
+
+14
+00:00:50,335 --> 00:00:52,270
+Our goal is to minimize
+
+15
+00:00:52,270 --> 00:00:57,445
+this average distance error by rotating and translating the point clouds.
+
+16
+00:00:57,445 --> 00:01:01,509
+Once we've minimized the error between the point clouds,
+
+17
+00:01:01,509 --> 00:01:05,120
+we have a match between our sensor scan and the map.
+
+18
+00:01:05,120 --> 00:01:08,960
+We translate the position of our vehicle from the sensor scan to
+
+19
+00:01:08,959 --> 00:01:13,974
+the global map and calculate our precise position on the map.
+
+20
+00:01:13,974 --> 00:01:18,709
+Filter algorithms are another approach to LIDAR localization.
+
+21
+00:01:18,709 --> 00:01:22,219
+Filter algorithms remove redundant information and
+
+22
+00:01:22,219 --> 00:01:25,905
+find the most likely position of the vehicle on the map.
+
+23
+00:01:25,905 --> 00:01:29,420
+Apollo uses the Histogram Filter algorithm.
+
+24
+00:01:29,420 --> 00:01:35,840
+This approach is sometimes called the Sum of Squared Differences or SSD.
+
+25
+00:01:35,840 --> 00:01:38,365
+To apply a Histogram Filter,
+
+26
+00:01:38,364 --> 00:01:44,280
+we slide the point cloud scan from the sensor across every position on the map.
+
+27
+00:01:44,280 --> 00:01:48,769
+At each position, we calculate the differences or distances
+
+28
+00:01:48,769 --> 00:01:53,834
+between the points in the scan and the corresponding points from the high-definition map,
+
+29
+00:01:53,834 --> 00:01:56,914
+then we sum the squares of the differences.
+
+30
+00:01:56,915 --> 00:01:58,710
+The smaller the sum,
+
+31
+00:01:58,709 --> 00:02:02,219
+the better the match between the scan and the map.
+
+32
+00:02:02,219 --> 00:02:06,590
+This example shows some points that line up better represented by
+
+33
+00:02:06,590 --> 00:02:10,875
+red and some points that line up worse represented by blue.
+
+34
+00:02:10,875 --> 00:02:14,895
+In this example, green indicates moderate alignment.
+
+35
+00:02:14,895 --> 00:02:19,705
+Kalman filters are another approach to LIDAR localization.
+
+36
+00:02:19,705 --> 00:02:23,515
+A Kalman filter is an algorithm used to predict
+
+37
+00:02:23,514 --> 00:02:27,984
+our current state based on our past state in new sensor measurements.
+
+38
+00:02:27,985 --> 00:02:32,955
+Specifically, Kalman filters use a prediction update cycle.
+
+39
+00:02:32,955 --> 00:02:37,840
+First, we estimate or predict our new position based on
+
+40
+00:02:37,840 --> 00:02:42,995
+our previous position and our estimate of how far we've moved and in what direction.
+
+41
+00:02:42,995 --> 00:02:46,210
+Of course our motion estimate is imperfect,
+
+42
+00:02:46,210 --> 00:02:51,135
+so we need to correct it by measuring our position in the world with sensors.
+
+43
+00:02:51,134 --> 00:02:54,599
+Once we measure our new position with sensors,
+
+44
+00:02:54,599 --> 00:02:59,150
+we can use the rules of probability to combine our sensor measurements,
+
+45
+00:02:59,150 --> 00:03:04,159
+which are also imperfect with our existing prediction of our position.
+
+46
+00:03:04,159 --> 00:03:07,069
+We follow this prediction update cycle
+
+47
+00:03:07,069 --> 00:03:10,430
+forever as long as we need to localize the vehicle.
+
+48
+00:03:10,430 --> 00:03:16,534
+First by predicting our new position and then by measuring our position with sensors.
+
+49
+00:03:16,534 --> 00:03:21,424
+The major advantage of LIDAR localization is robustness.
+
+50
+00:03:21,425 --> 00:03:26,125
+As long as we start with a high-definition map and we have working sensors,
+
+51
+00:03:26,125 --> 00:03:28,840
+we should always be able to localize.
+
+52
+00:03:28,840 --> 00:03:31,810
+The main disadvantage is the difficulty of
+
+53
+00:03:31,810 --> 00:03:35,819
+constructing high-definition maps and keeping them up to date.
+
+54
+00:03:35,819 --> 00:03:39,849
+In fact, it's almost never possible to keep maps precisely
+
+55
+00:03:39,849 --> 00:03:43,935
+up to date because almost every map contains transient elements.
+
+56
+00:03:43,935 --> 00:03:46,974
+Cars and pedestrians and even parked cars
+
+57
+00:03:46,974 --> 00:03:50,294
+that will all eventually be gone the next time we drive through,
+
+58
+00:03:50,294 --> 00:03:53,289
+litter on the street that will blow away and
+
+59
+00:03:53,289 --> 00:03:57,310
+all the many elements of the world that are constantly changing.
+

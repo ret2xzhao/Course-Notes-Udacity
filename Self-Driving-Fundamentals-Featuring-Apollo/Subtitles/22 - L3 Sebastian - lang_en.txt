@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:02,810
+Let's dive into localization.
+
+2
+00:00:02,810 --> 00:00:04,620
+A topic that's very close to my heart.
+
+3
+00:00:04,620 --> 00:00:07,019
+Back in the day when I was a full-time professor at
+
+4
+00:00:07,019 --> 00:00:10,250
+Stanford I published probably over 100 papers on localization,
+
+5
+00:00:10,250 --> 00:00:13,620
+so I can talk about it forever.
+
+6
+00:00:13,619 --> 00:00:19,109
+What is localization? Well, a robot needs to know where it is and this is not just the X,
+
+7
+00:00:19,109 --> 00:00:21,609
+Y locations also the heading direction and so on.
+
+8
+00:00:21,609 --> 00:00:25,679
+You might think that the GPS system that we have in space is good enough,
+
+9
+00:00:25,679 --> 00:00:27,870
+is good enough for you and me to navigate a car,
+
+10
+00:00:27,870 --> 00:00:31,140
+but what we're going to pursue with precision localization.
+
+11
+00:00:31,140 --> 00:00:35,505
+We're going to be so accurate that we can tell exactly in which land we are,
+
+12
+00:00:35,505 --> 00:00:39,000
+and where inside the lane we are. Why is that good?
+
+13
+00:00:39,000 --> 00:00:41,494
+Because if we know exactly where we are,
+
+14
+00:00:41,494 --> 00:00:46,429
+we can almost drive blindly if it wasn't for other cars and pedestrians and so on.
+
+15
+00:00:46,429 --> 00:00:50,174
+So, we're going to do a big panoramic view on localization.
+
+16
+00:00:50,174 --> 00:00:52,140
+There‘s different type of sensors involved,
+
+17
+00:00:52,140 --> 00:00:53,600
+we have what's called the inertial sensing,
+
+18
+00:00:53,600 --> 00:00:56,640
+there's different type of external sensors involve cameras,
+
+19
+00:00:56,640 --> 00:00:58,679
+lighter, all these wonderful things you've heard about in the news.
+
+20
+00:00:58,679 --> 00:01:02,810
+So, let's dive in and look at the topic of localization.
+

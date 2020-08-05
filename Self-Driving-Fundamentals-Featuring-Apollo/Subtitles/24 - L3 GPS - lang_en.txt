@@ -1,0 +1,200 @@
+1
+00:00:00,000 --> 00:00:04,795
+GPS stands for Global Positioning System.
+
+2
+00:00:04,795 --> 00:00:07,680
+It's a satellite navigation system developed by
+
+3
+00:00:07,680 --> 00:00:11,355
+the United States government which works around the globe.
+
+4
+00:00:11,355 --> 00:00:18,710
+The generic term for this type of system is Global Navigation Satellite System or GNSS.
+
+5
+00:00:18,710 --> 00:00:22,580
+GPS is the most widely used GNSS system.
+
+6
+00:00:22,580 --> 00:00:27,115
+At first, GPS was just used for military navigation.
+
+7
+00:00:27,115 --> 00:00:30,660
+But now, anyone can use a GPS receiver to collect
+
+8
+00:00:30,660 --> 00:00:34,630
+signals from GPS satellites and use the system.
+
+9
+00:00:34,630 --> 00:00:37,075
+GPS has three parts.
+
+10
+00:00:37,075 --> 00:00:39,345
+The first part is the satellite.
+
+11
+00:00:39,345 --> 00:00:44,725
+There are about 30 GPS satellites operating in outer space at any given time.
+
+12
+00:00:44,725 --> 00:00:49,775
+They're each located about 20,000 kilometers from the surface of the Earth.
+
+13
+00:00:49,775 --> 00:00:54,985
+The second part of the system consists of Control Stations around the world.
+
+14
+00:00:54,985 --> 00:00:59,625
+The Control Stations are used for monitoring and controlling the satellites.
+
+15
+00:00:59,625 --> 00:01:02,700
+Their main goal is to keep the system running and
+
+16
+00:01:02,700 --> 00:01:06,535
+verify the accuracy of the GPS broadcast signals.
+
+17
+00:01:06,535 --> 00:01:10,335
+The final part of the system is the GPS receiver.
+
+18
+00:01:10,335 --> 00:01:13,330
+GPS receivers exist in mobile phones,
+
+19
+00:01:13,330 --> 00:01:17,710
+computers, cars, boats, and many other devices.
+
+20
+00:01:17,710 --> 00:01:20,160
+If there are no obstructions around,
+
+21
+00:01:20,160 --> 00:01:23,030
+like tall buildings and the weather is good,
+
+22
+00:01:23,030 --> 00:01:26,080
+then no matter where we are on the surface of the earth,
+
+23
+00:01:26,080 --> 00:01:32,280
+our GPS receiver should be able to detect at least four GPS satellites at once.
+
+24
+00:01:32,280 --> 00:01:35,660
+The GPS receiver is not actually directly
+
+25
+00:01:35,660 --> 00:01:39,025
+detecting the distance between you and the satellite.
+
+26
+00:01:39,025 --> 00:01:42,435
+It first measures the time of flight of the signal,
+
+27
+00:01:42,435 --> 00:01:48,630
+that is how long did the signal take to travel from the satellite to the GPS receiver.
+
+28
+00:01:48,630 --> 00:01:52,320
+Multiplying this time of flight by the speed of light,
+
+29
+00:01:52,320 --> 00:01:54,945
+calculates the distance to the satellite.
+
+30
+00:01:54,945 --> 00:01:58,365
+Since the value of the speed of light is huge,
+
+31
+00:01:58,365 --> 00:02:04,585
+even a small amount of time error can cause a huge error in the distance calculation.
+
+32
+00:02:04,585 --> 00:02:10,360
+Therefore, every satellite is equipped with a highly accurate atomic clock.
+
+33
+00:02:10,360 --> 00:02:13,270
+In order to reduce the error further,
+
+34
+00:02:13,270 --> 00:02:17,465
+we can use Real Time Kinematic positioning or RTK.
+
+35
+00:02:17,465 --> 00:02:22,030
+RTK involves setting up several base stations on the ground.
+
+36
+00:02:22,030 --> 00:02:27,110
+Each base station knows its own precise Ground Truth location.
+
+37
+00:02:27,110 --> 00:02:32,995
+However, each base station also measures its own location through GPS.
+
+38
+00:02:32,995 --> 00:02:36,985
+The difference between its known Ground Truth location
+
+39
+00:02:36,985 --> 00:02:39,500
+and the location measured through GPS,
+
+40
+00:02:39,500 --> 00:02:42,070
+is the error in the GPS measurement.
+
+41
+00:02:42,070 --> 00:02:46,185
+This error is then passed on to other GPS receivers,
+
+42
+00:02:46,185 --> 00:02:50,375
+which use it to adjust their own location calculations.
+
+43
+00:02:50,375 --> 00:02:52,875
+With the help of RTK,
+
+44
+00:02:52,875 --> 00:02:57,650
+GPS can limit localization error to less than 10 centimeters.
+
+45
+00:02:57,650 --> 00:03:02,190
+However, there are still issues with tall buildings and other obstructions that can
+
+46
+00:03:02,190 --> 00:03:07,065
+block the GPS signal and make localization difficult or impossible.
+
+47
+00:03:07,065 --> 00:03:11,330
+Another drawback with GPS is that it has low update frequency,
+
+48
+00:03:11,330 --> 00:03:14,530
+around 10 hertz or 10 updates per second.
+
+49
+00:03:14,530 --> 00:03:17,175
+Since autonomous vehicles move quickly,
+
+50
+00:03:17,175 --> 00:03:21,200
+we may need to update our position more frequently than that.
+

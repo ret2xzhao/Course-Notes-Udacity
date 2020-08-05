@@ -1,0 +1,148 @@
+1
+00:00:00,000 --> 00:00:04,025
+We can use acceleration, initial velocity,
+
+2
+00:00:04,025 --> 00:00:06,970
+and initial position to calculate the velocity of
+
+3
+00:00:06,970 --> 00:00:10,725
+the car and the location of the car at any point in time.
+
+4
+00:00:10,725 --> 00:00:13,735
+However, this just raises another question.
+
+5
+00:00:13,735 --> 00:00:16,140
+How do we measure acceleration?
+
+6
+00:00:16,140 --> 00:00:20,680
+We need a sensor called a three-axis accelerometer.
+
+7
+00:00:20,680 --> 00:00:23,360
+There are different types of three-axis accelerometer,
+
+8
+00:00:23,360 --> 00:00:25,465
+and they use different approaches.
+
+9
+00:00:25,465 --> 00:00:30,150
+But the common goal is to accurately measure acceleration.
+
+10
+00:00:30,150 --> 00:00:33,535
+However, an accelerometer on its own is not
+
+11
+00:00:33,535 --> 00:00:37,125
+enough to calculate our position and velocity in the world.
+
+12
+00:00:37,125 --> 00:00:42,000
+The accelerometer records measurements based on the coordinate frame of the vehicle.
+
+13
+00:00:42,000 --> 00:00:47,340
+We need to know how to translate these measurements into the global coordinate system.
+
+14
+00:00:47,340 --> 00:00:52,310
+This translation requires another sensor called a gyroscope.
+
+15
+00:00:52,310 --> 00:00:57,775
+The three external gimbals of the three-axis gyroscope are always rotating,
+
+16
+00:00:57,775 --> 00:00:59,490
+but the spin axis in
+
+17
+00:00:59,490 --> 00:01:04,005
+the three-axis gyroscope is always fixed to the world coordinate system.
+
+18
+00:01:04,005 --> 00:01:09,030
+We can calculate the location of the vehicle in the global coordinate system by
+
+19
+00:01:09,030 --> 00:01:14,185
+measuring the relative positions of the spin axis and the three external gimbals.
+
+20
+00:01:14,185 --> 00:01:17,150
+An accelerometer and a gyroscope are
+
+21
+00:01:17,150 --> 00:01:21,860
+the main components of an inertial measurement unit or IMU.
+
+22
+00:01:21,860 --> 00:01:26,265
+An important feature of an IMU is high-frequency updating.
+
+23
+00:01:26,265 --> 00:01:28,885
+The frequency can reach 1,000 hertz.
+
+24
+00:01:28,885 --> 00:01:33,130
+So, the IMU can provide nearly real-time location information.
+
+25
+00:01:33,130 --> 00:01:39,540
+Unfortunately, the disadvantage of an IMU is that its motion error increases with time.
+
+26
+00:01:39,540 --> 00:01:42,425
+We can only rely on the inertial measurement unit
+
+27
+00:01:42,425 --> 00:01:46,010
+for localization over a very short time horizon.
+
+28
+00:01:46,010 --> 00:01:51,180
+But we can combine GPS and IMU to localize a car.
+
+29
+00:01:51,180 --> 00:01:56,520
+On the one hand, IMU compensates for the low update frequency of GPS.
+
+30
+00:01:56,520 --> 00:02:01,145
+On the other hand, GPS corrects for the IMU's motion errors.
+
+31
+00:02:01,145 --> 00:02:04,075
+Even a combined GPS and IMU system
+
+32
+00:02:04,075 --> 00:02:07,490
+won't completely solve our localization problem, however.
+
+33
+00:02:07,490 --> 00:02:09,694
+If we are traveling in the mountains,
+
+34
+00:02:09,694 --> 00:02:11,040
+or in urban canyons,
+
+35
+00:02:11,040 --> 00:02:13,575
+or worst of all in underground tunnels,
+
+36
+00:02:13,575 --> 00:02:17,750
+then we might go for long periods of time without a GPS update.
+
+37
+00:02:17,750 --> 00:02:21,870
+That puts our entire localization effort at risk.
+

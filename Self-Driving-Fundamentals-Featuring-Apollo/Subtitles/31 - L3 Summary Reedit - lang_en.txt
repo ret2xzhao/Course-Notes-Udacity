@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:02,375
+Congratulations.
+
+2
+00:00:02,375 --> 00:00:05,745
+You've just finished localization.
+
+3
+00:00:05,745 --> 00:00:09,129
+We discussed why a self-driving car needs to localize,
+
+4
+00:00:09,130 --> 00:00:12,975
+along with several important approaches to localization.
+
+5
+00:00:12,974 --> 00:00:17,719
+You've also seen what the Apollo localization framework looks like.
+
+6
+00:00:17,719 --> 00:00:22,890
+Now, we can combine information about our car's location with
+
+7
+00:00:22,890 --> 00:00:25,620
+other information from the software stack
+
+8
+00:00:25,620 --> 00:00:28,620
+in order to move our vehicles through the world.
+

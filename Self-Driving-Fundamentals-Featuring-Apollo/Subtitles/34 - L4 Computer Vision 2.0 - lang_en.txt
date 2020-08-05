@@ -1,0 +1,196 @@
+1
+00:00:00,000 --> 00:00:05,910
+As humans, you and I can automatically recognize objects and images,
+
+2
+00:00:05,910 --> 00:00:09,750
+and we can even infer relationships between those objects.
+
+3
+00:00:09,750 --> 00:00:11,679
+But for a computer,
+
+4
+00:00:11,679 --> 00:00:14,134
+in images just a collection of red,
+
+5
+00:00:14,134 --> 00:00:16,559
+green, and blue color values.
+
+6
+00:00:16,559 --> 00:00:19,875
+It's not obvious how to translate those color values
+
+7
+00:00:19,875 --> 00:00:23,850
+into a meaningful understanding of the contents of the image.
+
+8
+00:00:23,850 --> 00:00:28,540
+Self-driving cars have four core tasks for perceiving the world.
+
+9
+00:00:28,539 --> 00:00:33,579
+Detection, which means finding out where an object is in the environment.
+
+10
+00:00:33,579 --> 00:00:39,054
+Classification, which means determining what exactly the object is.
+
+11
+00:00:39,054 --> 00:00:44,765
+Tracking, which means observing moving objects like other vehicles,
+
+12
+00:00:44,765 --> 00:00:48,149
+bicycles, and pedestrians across time,
+
+13
+00:00:48,149 --> 00:00:51,344
+and semantic segmentation, which means
+
+14
+00:00:51,344 --> 00:00:55,208
+matching each pixel in an image with the semantic category,
+
+15
+00:00:55,209 --> 00:00:58,965
+such as road, car, or sky.
+
+16
+00:00:58,965 --> 00:01:02,580
+We can use classification as an example to
+
+17
+00:01:02,579 --> 00:01:06,474
+study the general data pipeline for computer vision.
+
+18
+00:01:06,474 --> 00:01:11,364
+An image classifier is an algorithm that takes an image as input
+
+19
+00:01:11,364 --> 00:01:16,224
+and outputs a label or “class” that identifies that image.
+
+20
+00:01:16,224 --> 00:01:20,379
+For example, a traffic sign classifier looks
+
+21
+00:01:20,379 --> 00:01:24,729
+its signs and identifies whether each sign is a stop sign,
+
+22
+00:01:24,730 --> 00:01:27,505
+yield sign, speed limit sign,
+
+23
+00:01:27,504 --> 00:01:29,750
+or another type of sign.
+
+24
+00:01:29,750 --> 00:01:36,840
+Classifiers can even identify behaviors like whether a person is walking or running.
+
+25
+00:01:36,840 --> 00:01:39,415
+There are many types of classifiers,
+
+26
+00:01:39,415 --> 00:01:42,975
+but they all include a similar series of steps.
+
+27
+00:01:42,974 --> 00:01:48,399
+First, the classifier receives input from an imaging device like a camera.
+
+28
+00:01:48,400 --> 00:01:52,805
+This is typically captured as an image or a sequence of images.
+
+29
+00:01:52,805 --> 00:01:56,870
+Each image is then sent through pre-processing.
+
+30
+00:01:56,870 --> 00:02:00,760
+Pre-processing standardizes each image.
+
+31
+00:02:00,760 --> 00:02:06,520
+Common pre-processing steps include resizing an image or rotating it,
+
+32
+00:02:06,519 --> 00:02:09,799
+or transforming the image from one color space to another,
+
+33
+00:02:09,800 --> 00:02:12,890
+like from full color to grayscale.
+
+34
+00:02:12,889 --> 00:02:18,428
+Pre-processing helps our models work with and learn from the images faster.
+
+35
+00:02:18,429 --> 00:02:21,854
+Next, we extract features.
+
+36
+00:02:21,854 --> 00:02:26,189
+Features are what help the computer understand the image.
+
+37
+00:02:26,189 --> 00:02:30,944
+For example, some features that distinguish a car from a bicycle,
+
+38
+00:02:30,944 --> 00:02:37,609
+are that a car is usually a much larger shape and it has four wheels instead of two.
+
+39
+00:02:37,610 --> 00:02:42,780
+The shape and wheels would be distinguishing features for a car.
+
+40
+00:02:42,780 --> 00:02:46,314
+We'll talk more about features later in this lesson.
+
+41
+00:02:46,314 --> 00:02:51,335
+Finally, these features are fed into a Classification model.
+
+42
+00:02:51,335 --> 00:02:55,575
+This step uses features to select a class for the image.
+
+43
+00:02:55,574 --> 00:03:00,405
+For example, a classifier might determine whether an image contains a car,
+
+44
+00:03:00,405 --> 00:03:04,344
+bicycle, pedestrian or no such object at all.
+
+45
+00:03:04,344 --> 00:03:07,150
+In order to complete these vision tasks,
+
+46
+00:03:07,150 --> 00:03:09,319
+we need to build models.
+
+47
+00:03:09,319 --> 00:03:14,784
+Models are tools that help the computer understand the contents of images.
+
+48
+00:03:14,784 --> 00:03:19,905
+In computer vision, no matter what task the models are trained to perform,
+
+49
+00:03:19,905 --> 00:03:23,990
+they typically start with camera images as input.
+

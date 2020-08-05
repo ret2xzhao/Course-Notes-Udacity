@@ -1,0 +1,152 @@
+1
+00:00:00,000 --> 00:00:04,559
+A convolutional neural network or CNN is
+
+2
+00:00:04,559 --> 00:00:09,914
+a type of artificial neural network that works particularly well for perception problems.
+
+3
+00:00:09,914 --> 00:00:14,339
+CNNs are designed to accept multi-dimensional input
+
+4
+00:00:14,339 --> 00:00:20,085
+including the two-dimensional and three-dimensional shapes that define most sensor data.
+
+5
+00:00:20,085 --> 00:00:25,380
+If you use a standard fully connected neural network for image classification,
+
+6
+00:00:25,379 --> 00:00:27,890
+you'll need a way to connect the image to
+
+7
+00:00:27,890 --> 00:00:31,370
+the first layer of the network, which is one-dimensional.
+
+8
+00:00:31,370 --> 00:00:37,429
+The standard way to do this is to unroll the image into a one-dimensional pixel array by
+
+9
+00:00:37,429 --> 00:00:43,700
+reshaping the image matrix into a vector connecting all the columns into one giant row.
+
+10
+00:00:43,700 --> 00:00:49,255
+This approach, however, breaks up the spatial information embedded in the image.
+
+11
+00:00:49,255 --> 00:00:51,580
+If there's a wheel in the image,
+
+12
+00:00:51,579 --> 00:00:55,875
+all the pixels in that wheel will be scattered throughout the pixel array.
+
+13
+00:00:55,875 --> 00:00:58,835
+But we know that these pixels connect together
+
+14
+00:00:58,835 --> 00:01:01,939
+in two dimensions in order to form a wheel.
+
+15
+00:01:01,939 --> 00:01:04,429
+If we scatter them across one-dimension,
+
+16
+00:01:04,430 --> 00:01:08,755
+it becomes hard for the neural network to extract the wheel from the image.
+
+17
+00:01:08,754 --> 00:01:15,439
+CNNs solve this problem by maintaining the spatial relationship between input pixels.
+
+18
+00:01:15,439 --> 00:01:18,530
+Specifically, CNNs have filters that
+
+19
+00:01:18,530 --> 00:01:23,045
+continuously slide over the input image to collect information.
+
+20
+00:01:23,045 --> 00:01:25,670
+Each time the information is collected,
+
+21
+00:01:25,670 --> 00:01:29,585
+only a small region of the whole image is analyzed.
+
+22
+00:01:29,584 --> 00:01:32,269
+This is called a convolution.
+
+23
+00:01:32,269 --> 00:01:36,939
+As we convolve a filter over the entire input image,
+
+24
+00:01:36,939 --> 00:01:40,545
+we connect that information to the next convolutional layer.
+
+25
+00:01:40,545 --> 00:01:45,790
+For example, a CNN might identify basic edge and color information in
+
+26
+00:01:45,790 --> 00:01:52,180
+the first convolutional layer then by connecting a new filter over that first layer,
+
+27
+00:01:52,180 --> 00:01:56,260
+the CNN might use the edge and color information to detect
+
+28
+00:01:56,260 --> 00:02:01,853
+more complex structures such as wheels, doors, and windshields.
+
+29
+00:02:01,853 --> 00:02:05,469
+Yet another convolution might use these wheels
+
+30
+00:02:05,469 --> 00:02:09,039
+and doors and windshields to identify an entire vehicle.
+
+31
+00:02:09,039 --> 00:02:11,400
+Finally, the network might use
+
+32
+00:02:11,400 --> 00:02:15,659
+this high order information to classify the type of vehicle.
+
+33
+00:02:15,659 --> 00:02:21,210
+Humans don't often know exactly how a CNN interprets an image.
+
+34
+00:02:21,210 --> 00:02:24,844
+CNN sometimes focus on surprising parts of the image,
+
+35
+00:02:24,844 --> 00:02:27,460
+but this is also the magic of deep learning.
+
+36
+00:02:27,460 --> 00:02:32,915
+A CNN finds the features it really needs based on its task.
+
+37
+00:02:32,914 --> 00:02:36,639
+The task could be image detection, classification,
+
+38
+00:02:36,639 --> 00:02:40,399
+segmentation, or another type of goal.
+

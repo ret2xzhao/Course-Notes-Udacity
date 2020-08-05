@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:05,144
+Let's consider an approach to localization called inertial navigation.
+
+2
+00:00:05,144 --> 00:00:09,699
+Imagine a car traveling in a straight line at constant velocity.
+
+3
+00:00:09,699 --> 00:00:13,154
+If I gave you the initial location of the car
+
+4
+00:00:13,154 --> 00:00:16,379
+and its velocity and how long it's been moving,
+
+5
+00:00:16,379 --> 00:00:20,384
+could you tell me where the car is now? You probably could.
+
+6
+00:00:20,385 --> 00:00:25,935
+Start with the initial location and then multiply velocity and time.
+
+7
+00:00:25,934 --> 00:00:28,719
+Next, let's try a harder question.
+
+8
+00:00:28,719 --> 00:00:33,489
+Same problem but instead of initial position and velocity,
+
+9
+00:00:33,490 --> 00:00:37,510
+I give you the initial velocity and acceleration.
+
+10
+00:00:37,509 --> 00:00:42,009
+Could you tell me the velocity of the vehicle at a later time?
+

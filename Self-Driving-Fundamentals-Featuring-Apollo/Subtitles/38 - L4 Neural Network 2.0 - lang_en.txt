@@ -1,0 +1,156 @@
+1
+00:00:00,000 --> 00:00:03,120
+The artificial neural networks we use in
+
+2
+00:00:03,120 --> 00:00:05,580
+self-driving cars are inspired by
+
+3
+00:00:05,580 --> 00:00:09,449
+the biological neurons that comprise the human nervous system.
+
+4
+00:00:09,449 --> 00:00:12,609
+Our biological neurons are connected together to
+
+5
+00:00:12,609 --> 00:00:15,799
+form a network of neurons or a neural network.
+
+6
+00:00:15,800 --> 00:00:17,219
+In a similar way,
+
+7
+00:00:17,219 --> 00:00:19,015
+we can connect together layers of
+
+8
+00:00:19,015 --> 00:00:23,830
+artificial neurons to create artificial neural networks for machine learning.
+
+9
+00:00:23,829 --> 00:00:29,234
+An artificial neural network is a tool to learn complex patterns from data.
+
+10
+00:00:29,234 --> 00:00:33,369
+Neural networks are comprised of a large number of neurons.
+
+11
+00:00:33,369 --> 00:00:37,339
+Like neurons in the neurological systems of our bodies,
+
+12
+00:00:37,340 --> 00:00:42,665
+artificial neurons are responsible for delivering and processing information.
+
+13
+00:00:42,664 --> 00:00:45,905
+These neurons can also be trained.
+
+14
+00:00:45,905 --> 00:00:50,785
+You can recognize these images as vehicles whether they're black or white,
+
+15
+00:00:50,784 --> 00:00:52,659
+or big or small.
+
+16
+00:00:52,659 --> 00:00:56,123
+You may not even know how you know that they're vehicles.
+
+17
+00:00:56,124 --> 00:00:59,510
+Maybe certain features like wheels,
+
+18
+00:00:59,509 --> 00:01:03,174
+lights, and windows trigger your response.
+
+19
+00:01:03,174 --> 00:01:06,564
+Artificial neural networks operate similarly.
+
+20
+00:01:06,564 --> 00:01:11,319
+Through extensive training, computers can distinguish between cars,
+
+21
+00:01:11,319 --> 00:01:15,649
+pedestrians, traffic lights, and even telegraph poles.
+
+22
+00:01:15,650 --> 00:01:19,029
+We don't always know how they make this distinction,
+
+23
+00:01:19,028 --> 00:01:22,834
+but they learn a mathematical model for performing this task.
+
+24
+00:01:22,834 --> 00:01:28,464
+It's just that this mathematical model may be hard for us to intuitively understand.
+
+25
+00:01:28,465 --> 00:01:30,030
+When you see an image,
+
+26
+00:01:30,030 --> 00:01:32,010
+how does your brain work?
+
+27
+00:01:32,010 --> 00:01:34,810
+Your brain might first divide the image into
+
+28
+00:01:34,810 --> 00:01:38,905
+several parts and then identify features such as wheels,
+
+29
+00:01:38,905 --> 00:01:42,129
+windows and colors, then your brain would
+
+30
+00:01:42,129 --> 00:01:46,049
+use those features to detect or classify the image.
+
+31
+00:01:46,049 --> 00:01:50,364
+For example, to determine whether the image is a car,
+
+32
+00:01:50,364 --> 00:01:56,204
+your brain might not think that color is a key feature since cars come in many colors.
+
+33
+00:01:56,204 --> 00:02:02,134
+Your brain will put more weight on other features and reduce the importance of color.
+
+34
+00:02:02,135 --> 00:02:06,689
+Similarly, a neural network extracts many features from
+
+35
+00:02:06,689 --> 00:02:13,594
+an image but these might be features that we humans can't describe or even understand.
+
+36
+00:02:13,594 --> 00:02:17,090
+But our understanding isn't ultimately necessary.
+
+37
+00:02:17,090 --> 00:02:19,349
+The computer will adjust the weights of
+
+38
+00:02:19,349 --> 00:02:23,629
+these features to accomplish the final task of the network.
+
+39
+00:02:23,629 --> 00:02:27,519
+That's basically how deep neural networks think.
+
